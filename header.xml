@@ -1,0 +1,25 @@
+<My_include>
+
+    <schematype>flat</schematype>
+    <control>
+        <!--<duration>2400</duration> -->
+        <duration>240</duration>
+        <startmonth>1</startmonth>
+        <startyear>2000</startyear>
+        <decay>never</decay>
+        <tolerance_resource>1e-5</tolerance_resource>
+    </control>
+
+    <archetypes>
+        <spec> <lib>cycamore</lib> <name>Source</name></spec>
+        <spec> <lib>cycamore</lib> <name>DeployInst</name></spec>
+        <spec> <lib>cycamore</lib> <name>Sink</name></spec>
+        <spec> <lib>cycamore</lib> <name>Enrichment</name> </spec>
+        <spec> <lib>cycamore</lib> <name>Reactor</name> </spec>
+        <spec> <lib>cycamore</lib> <name>Storage</name> </spec>
+        <spec> <lib>cycamore</lib> <name>FuelFab</name> </spec>
+        <spec> <lib>cycamore</lib> <name>Separations</name> </spec>
+    </archetypes>
+
+
+</My_include>

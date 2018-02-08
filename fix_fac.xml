@@ -1,0 +1,149 @@
+<My_include>
+
+    <prototype>
+        <name>str_pu</name>
+        <config>
+            <Storage>
+                <in_commods><val>c_pu</val></in_commods>
+                <out_commods><val>c_pu_str</val></out_commods>
+                <residence_time>0</residence_time>
+            </Storage>
+        </config>
+    </prototype>
+
+    <prototype>
+        <name>str_ru</name>
+        <config>
+            <Storage>
+                <in_commods><val>ru</val></in_commods>
+                <out_commods><val>ru_str</val></out_commods>
+                <residence_time>0</residence_time>
+            </Storage>
+        </config>
+    </prototype>
+
+    <prototype>
+        <name>src_depleted</name>
+        <config>
+            <Source>
+                <outcommod>c_du</outcommod>
+                <outrecipe>r_du</outrecipe>
+                <throughput>1e100</throughput>
+            </Source>
+        </config>
+    </prototype>
+
+    <prototype>
+        <name>waste</name>
+        <config>
+            <Sink>
+                <in_commods><val>waste</val></in_commods>
+                <capacity>1e100</capacity>
+            </Sink>
+        </config>
+    </prototype>
+
+    <prototype>
+        <name>str_du</name>
+        <config>
+            <Storage>
+                <in_commods>
+                    <val>c_du</val>
+                </in_commods>
+                <out_commods>
+                    <val>c_du_str</val>
+                </out_commods>
+                <residence_time>0</residence_time>
+            </Storage>
+        </config>
+    </prototype>
+
+    <prototype>
+        <name>str_lwr_a</name>
+        <config>
+            <Storage>
+                <in_commods> <val>c_uox_a_sc</val></in_commods>
+                <out_commods> <val>c_uox_uox_A_sc_str</val></out_commods>
+                <residence_time>0</residence_time>
+            </Storage>
+        </config>
+    </prototype>
+
+    <prototype>
+        <name>cool_lwr_a</name>
+        <config>
+            <Storage>
+                <in_commods> <val>c_uox_a_s</val></in_commods>
+                <out_commods> <val>c_uox_a_sc</val></out_commods>
+                <residence_time>81</residence_time>
+            </Storage>
+        </config>
+    </prototype>
+
+    <prototype>
+        <name>str_lwr_b</name>
+        <config>
+            <Storage>
+                <in_commods> <val>c_uox_b_sc</val></in_commods>
+                <out_commods> <val>c_uox_b_sc_str</val></out_commods>
+                <residence_time>0</residence_time>
+            </Storage>
+        </config>
+    </prototype>
+
+    <prototype>
+        <name>cool_lwr_b</name>
+        <config>
+            <Storage>
+                <in_commods> <val>c_uox_b_s</val></in_commods>
+                <out_commods> <val>uox_b_sc</val></out_commods>
+                <residence_time>81</residence_time>
+            </Storage>
+        </config>
+    </prototype>
+
+    <prototype>
+        <name>str_sfr_a</name>
+        <config>
+            <Storage>
+                <in_commods><val>c_sfr_a_sc</val></in_commods>
+                <out_commods><val>c_sfr_a_sc_str</val></out_commods>
+                <residence_time>0</residence_time>
+            </Storage>
+        </config>
+    </prototype>
+
+    <prototype>
+        <name>cool_sfr_a</name>
+        <config>
+            <Storage>
+                <in_commods><val>c_sfr_a_s</val></in_commods>
+                <out_commods><val>c_sfr_a_sc</val></out_commods>
+                <residence_time>81</residence_time>
+            </Storage>
+        </config>
+    </prototype>
+
+    <prototype>
+        <name>str_sfr_b</name>
+        <config>
+            <Storage>
+                <in_commods><val>c_sfr_b_sc</val></in_commods>
+                <out_commods><val>c_sfr_b_sc_str</val></out_commods>
+                <residence_time>0</residence_time>
+            </Storage>
+        </config>
+    </prototype>
+
+    <prototype>
+        <name>cool_sfr_b</name>
+        <config>
+            <Storage>
+                <in_commods><val>c_sfr_b_s</val></in_commods>
+                <out_commods><val>c_sfr_b_sc</val></out_commods>
+                <residence_time>81</residence_time>
+            </Storage>
+        </config>
+    </prototype>
+
+</My_include>

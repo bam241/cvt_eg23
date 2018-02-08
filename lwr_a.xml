@@ -1,94 +1,53 @@
 <My_include>
-  <prototype>
-    <name>LWR_A_storage</name>
-    <config>
-      <Storage>
-        <in_commods> <val>UOX_A_spent_cooled</val></in_commods>
-        <out_commods> <val>UOX_A_spent_stored</val></out_commods>
-        <residence_time>0</residence_time>
-      </Storage>
-    </config>
-  </prototype>
+
+
 
 
   <prototype>
-    <name>LWR_A_cooling</name>
-    <config>
-      <Storage>
-        <in_commods> <val>UOX_A_spent</val></in_commods>
-        <out_commods> <val>UOX_A_spent_cooled</val></out_commods>
-        <residence_time>81</residence_time>
-      </Storage>
-    </config>
-  </prototype>
-
-
-  <prototype>
-    <name>LWR_A</name>
-    <lifetime>960</lifetime>
-    <config>
-      <Reactor>
-        <fuel_inrecipes>  <val>UOX</val></fuel_inrecipes>
-        <fuel_outrecipes> <val>UOX_spent</val></fuel_outrecipes>
-        <fuel_incommods>  <val>UOX</val></fuel_incommods>
-        <fuel_outcommods> <val>UOX_A_spent</val></fuel_outcommods>
-
-        <cycle_time>18</cycle_time>
-        <refuel_time>0</refuel_time>
-        <assem_size>29565</assem_size>
-        <n_assem_core>3</n_assem_core>
-        <n_assem_batch>1</n_assem_batch>
-        <power_cap>900</power_cap>
-      </Reactor>
-    </config>
-  </prototype>
-
-
-  <prototype>
-    <name>init_reactor_deployer_LWR_A</name>
+    <name>init_reactor_deployer_lwr_a</name>
     <config>
       <DeployInst>
         <prototypes>
-          <val>LWR_A</val>
-          <val>LWR_A</val>
-          <val>LWR_A</val>
-          <val>LWR_A</val>
-          <val>LWR_A</val>
-          <val>LWR_A</val>
-          <val>LWR_A</val>
-          <val>LWR_A</val>
-          <val>LWR_A</val>
-          <val>LWR_A</val>
-          <val>LWR_A</val>
-          <val>LWR_A</val>
-          <val>LWR_A</val>
-          <val>LWR_A</val>
-          <val>LWR_A</val>
-          <val>LWR_A</val>
-          <val>LWR_A</val>
-          <val>LWR_A</val>
-          <val>LWR_A</val>
-          <val>LWR_A</val>
-          <val>LWR_A</val>
-          <val>LWR_A</val>
-          <val>LWR_A</val>
-          <val>LWR_A</val>
-          <val>LWR_A</val>
-          <val>LWR_A</val>
-          <val>LWR_A</val>
-          <val>LWR_A</val>
-          <val>LWR_A</val>
-          <val>LWR_A</val>
-          <val>LWR_A</val>
-          <val>LWR_A</val>
-          <val>LWR_A</val>
-          <val>LWR_A</val>
-          <val>LWR_A</val>
-          <val>LWR_A</val>
-          <val>LWR_A</val>
-          <val>LWR_A</val>
-          <val>LWR_A</val>
-          <val>LWR_A</val>
+          <val>lwr_a</val>
+          <val>lwr_a</val>
+          <val>lwr_a</val>
+          <val>lwr_a</val>
+          <val>lwr_a</val>
+          <val>lwr_a</val>
+          <val>lwr_a</val>
+          <val>lwr_a</val>
+          <val>lwr_a</val>
+          <val>lwr_a</val>
+          <val>lwr_a</val>
+          <val>lwr_a</val>
+          <val>lwr_a</val>
+          <val>lwr_a</val>
+          <val>lwr_a</val>
+          <val>lwr_a</val>
+          <val>lwr_a</val>
+          <val>lwr_a</val>
+          <val>lwr_a</val>
+          <val>lwr_a</val>
+          <val>lwr_a</val>
+          <val>lwr_a</val>
+          <val>lwr_a</val>
+          <val>lwr_a</val>
+          <val>lwr_a</val>
+          <val>lwr_a</val>
+          <val>lwr_a</val>
+          <val>lwr_a</val>
+          <val>lwr_a</val>
+          <val>lwr_a</val>
+          <val>lwr_a</val>
+          <val>lwr_a</val>
+          <val>lwr_a</val>
+          <val>lwr_a</val>
+          <val>lwr_a</val>
+          <val>lwr_a</val>
+          <val>lwr_a</val>
+          <val>lwr_a</val>
+          <val>lwr_a</val>
+          <val>lwr_a</val>
         </prototypes>
         <n_build>
           <val>3</val>
@@ -223,12 +182,12 @@
 
 
   <prototype>
-    <name>deployer_supply_LWR_A</name>
+    <name>deployer_supply_lwr_a</name>
     <config>
       <DeployInst>
         <prototypes>
-          <val>LWR_A_storage</val>
-          <val>LWR_A_cooling</val>
+          <val>str_lwr_a</val>
+          <val>cool_lwr_a</val>
         </prototypes>
 
         <build_times>
