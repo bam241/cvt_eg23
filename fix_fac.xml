@@ -15,8 +15,8 @@
         <name>str_ru</name>
         <config>
             <Storage>
-                <in_commods><val>ru</val></in_commods>
-                <out_commods><val>ru_str</val></out_commods>
+                <in_commods><val>c_ru</val></in_commods>
+                <out_commods><val>c_ru_str</val></out_commods>
                 <residence_time>0</residence_time>
             </Storage>
         </config>
@@ -26,7 +26,7 @@
         <name>src_depleted</name>
         <config>
             <Source>
-                <outcommod>c_du</outcommod>
+                <outcommod>c_du_src</outcommod>
                 <outrecipe>r_du</outrecipe>
                 <throughput>1e100</throughput>
             </Source>
@@ -37,7 +37,7 @@
         <name>waste</name>
         <config>
             <Sink>
-                <in_commods><val>waste</val></in_commods>
+                <in_commods><val>c_waste</val></in_commods>
                 <capacity>1e100</capacity>
             </Sink>
         </config>
@@ -63,7 +63,7 @@
         <config>
             <Storage>
                 <in_commods> <val>c_uox_a_sc</val></in_commods>
-                <out_commods> <val>c_uox_uox_A_sc_str</val></out_commods>
+                <out_commods> <val>c_uox_a_sc_str</val></out_commods>
                 <residence_time>0</residence_time>
             </Storage>
         </config>
@@ -96,7 +96,7 @@
         <config>
             <Storage>
                 <in_commods> <val>c_uox_b_s</val></in_commods>
-                <out_commods> <val>uox_b_sc</val></out_commods>
+                <out_commods> <val>c_uox_b_sc</val></out_commods>
                 <residence_time>81</residence_time>
             </Storage>
         </config>

@@ -22,7 +22,7 @@
     </recipe>
 
     <recipe>
-        <name>r_uox_spent_bak</name>
+        <name>r_uox_s_bak</name>
         <basis>mass</basis>
         <nuclide><id>U235</id> <comp>.008</comp> </nuclide>
         <nuclide><id>U238</id> <comp> 0.9245</comp></nuclide>
@@ -33,7 +33,7 @@
     </recipe>
 
     <recipe>
-        <name>r_uox_spent</name>
+        <name>r_uox_s</name>
         <basis>mass</basis>
         <nuclide><id>U235</id> <comp>.008</comp> </nuclide>
         <nuclide><id>U238</id> <comp>0.9268</comp></nuclide>
@@ -51,7 +51,7 @@
     </recipe>
 
     <recipe>
-        <name>r_sfr_a_spent</name>
+        <name>r_sfr_a_s</name>
         <basis>mass</basis>
         <nuclide><id>U238</id> <comp>0.8599</comp></nuclide>
         <nuclide><id>Pu239</id> <comp>0.0902</comp></nuclide>
@@ -67,7 +67,7 @@
     </recipe>
 
     <recipe>
-        <name>r_sfr_b_spent</name>
+        <name>r_sfr_b_s</name>
         <basis>mass</basis>
         <nuclide><id>U238</id> <comp>0.86025</comp></nuclide>
         <nuclide><id>Pu239</id> <comp>0.09596</comp></nuclide>

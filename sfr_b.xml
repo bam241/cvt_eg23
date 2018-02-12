@@ -133,120 +133,24 @@
         </config>
     </prototype>
 
-
+    <!--
     <prototype>
         <name>fabrication_deployer_sfr_b</name>
         <config>
             <DeployInst>
                 <prototypes>
-                    <val>SFR_FAB_B</val>
-                    <val>SFR_FAB_B</val>
-                    <val>SFR_FAB_B</val>
-                    <val>SFR_FAB_B</val>
-                    <val>SFR_FAB_B</val>
-                    <val>SFR_FAB_B</val>
-                    <val>SFR_FAB_B</val>
-                    <val>SFR_FAB_B</val>
-                    <val>SFR_FAB_B</val>
-                    <val>SFR_FAB_B</val>
-                    <val>SFR_FAB_B</val>
-                    <val>SFR_FAB_B</val>
-                    <val>SFR_FAB_B</val>
-                    <val>SFR_FAB_B</val>
-                    <val>SFR_FAB_B</val>
-                    <val>SFR_FAB_B</val>
-                    <val>SFR_FAB_B</val>
-                    <val>SFR_FAB_B</val>
-                    <val>SFR_FAB_B</val>
-                    <val>SFR_FAB_B</val>
-                    <val>SFR_FAB_B</val>
-                    <val>SFR_FAB_B</val>
-                    <val>SFR_FAB_B</val>
-                    <val>SFR_FAB_B</val>
-                    <val>SFR_FAB_B</val>
-                    <val>SFR_FAB_B</val>
-                    <val>SFR_FAB_B</val>
-                    <val>SFR_FAB_B</val>
-                    <val>SFR_FAB_B</val>
-                    <val>SFR_FAB_B</val>
-                    <val>SFR_FAB_B</val>
-                    <val>SFR_FAB_B</val>
-                    <val>SFR_FAB_B</val>
+                    <val>fab_sfr_b</val>
                 </prototypes>
                 <n_build>
                     <val>1</val>
-                    <val>1</val>
-                    <val>3</val>
-                    <val>2</val>
-                    <val>2</val>
-                    <val>2</val>
-                    <val>2</val>
-                    <val>2</val>
-                    <val>3</val>
-                    <val>2</val>
-                    <val>2</val>
-                    <val>3</val>
-                    <val>3</val>
-                    <val>3</val>
-                    <val>3</val>
-                    <val>3</val>
-                    <val>3</val>
-                    <val>3</val>
-                    <val>3</val>
-                    <val>3</val>
-                    <val>4</val>
-                    <val>3</val>
-                    <val>3</val>
-                    <val>3</val>
-                    <val>4</val>
-                    <val>3</val>
-                    <val>3</val>
-                    <val>3</val>
-                    <val>4</val>
-                    <val>3</val>
-                    <val>4</val>
-                    <val>3</val>
-                    <val>4</val>
                 </n_build>
 
                 <build_times>
                     <val>1957</val>
-                    <val>1969</val>
-                    <val>1981</val>
-                    <val>1993</val>
-                    <val>2005</val>
-                    <val>2017</val>
-                    <val>2029</val>
-                    <val>2041</val>
-                    <val>2053</val>
-                    <val>2065</val>
-                    <val>2077</val>
-                    <val>2089</val>
-                    <val>2101</val>
-                    <val>2113</val>
-                    <val>2125</val>
-                    <val>2137</val>
-                    <val>2149</val>
-                    <val>2161</val>
-                    <val>2173</val>
-                    <val>2185</val>
-                    <val>2197</val>
-                    <val>2209</val>
-                    <val>2221</val>
-                    <val>2233</val>
-                    <val>2245</val>
-                    <val>2257</val>
-                    <val>2269</val>
-                    <val>2281</val>
-                    <val>2293</val>
-                    <val>2305</val>
-                    <val>2317</val>
-                    <val>2329</val>
-                    <val>2341</val>
                 </build_times>
             </DeployInst>
         </config>
     </prototype>
-
+-->
 
 </My_include>
