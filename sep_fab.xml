@@ -81,14 +81,14 @@
                     <val>1</val>
                 </fill_commod_prefs>
                 <fill_recipe>r_du</fill_recipe>
-                <fill_size>74400</fill_size>
+                <fill_size>186000</fill_size>
 
                 <fiss_commods>
                     <val>c_pu_str</val>
                 </fiss_commods>
-                <fiss_size>7200</fiss_size>
+                <fiss_size>18000</fiss_size>
 
-                <throughput>80000</throughput>
+                <throughput>2000000</throughput>
                 <spectrum>fission_spectrum_ave</spectrum>
                 <outcommod>c_sfr_fuel</outcommod>
             </FuelFab>

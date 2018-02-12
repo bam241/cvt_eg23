@@ -419,6 +419,17 @@
                     <val>fab_sfr_a</val>
                     <val>fab_sfr_a</val>
                     <val>fab_sfr_a</val>
+                    <val>fab_sfr_a</val>
+                    <val>fab_sfr_a</val>
+                    <val>fab_sfr_a</val>
+                    <val>fab_sfr_a</val>
+                    <val>fab_sfr_a</val>
+                    <val>fab_sfr_a</val>
+                    <val>fab_sfr_a</val>
+                    <val>fab_sfr_a</val>
+                    <val>fab_sfr_a</val>
+                    <val>fab_sfr_a</val>
+                    <val>fab_sfr_a</val>
                 </prototypes>
                 <n_build>
                     <val>1</val>
@@ -426,40 +437,62 @@
                     <val>1</val>
                     <val>1</val>
                     <val>1</val>
-                    <val>2</val>
-                    <val>2</val>
-                    <val>1</val>
-                    <val>2</val>
-                    <val>2</val>
                     <val>1</val>
                     <val>1</val>
-                    <val>2</val>
                     <val>1</val>
-                    <val>2</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
                     <val>1</val>
                     <val>1</val>
                     <val>1</val>
                 </n_build>
 
                 <build_times>
-                    <val>420</val>
-                    <val>780</val>
-                    <val>900</val>
-                    <val>1020</val>
-                    <val>1080</val>
-                    <val>1140</val>
-                    <val>1260</val>
-                    <val>1320</val>
-                    <val>1380</val>
+                    <val>384</val>
+                    <val>408</val>
+                    <val>432</val>
+                    <val>948</val>
+                    <val>972</val>
+                    <val>1104</val>
+                    <val>1128</val>
+                    <val>1236</val>
+                    <val>1368</val>
+                    <val>1392</val>
+                    <val>1476</val>
                     <val>1500</val>
-                    <val>1560</val>
-                    <val>1620</val>
-                    <val>1680</val>
-                    <val>1800</val>
-                    <val>1920</val>
-                    <val>1980</val>
-                    <val>2040</val>
-                    <val>2160</val>
+                    <val>1608</val>
+                    <val>1632</val>
+                    <val>1764</val>
+                    <val>1896</val>
+                    <val>1956</val>
+                    <val>1968</val>
+                    <val>1992</val>
+                    <val>2016</val>
+                    <val>2028</val>
+                    <val>2064</val>
+                    <val>2088</val>
+                    <val>2112</val>
+                    <val>2124</val>
+                    <val>2148</val>
+                    <val>2172</val>
+                    <val>2208</val>
+                    <val>2220</val>
                 </build_times>
             </DeployInst>
         </config>
