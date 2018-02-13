@@ -27,7 +27,7 @@
                 <feedbuf_size>66000</feedbuf_size>
                 -->
                 <throughput>1e100</throughput>
-                <feedbuf_size>1e100</feedbuf_size>
+                <feedbuf_size>200000</feedbuf_size>
                 <feed_commods>
                     <val>c_uox_a_sc_str</val>
                     <val>c_uox_b_sc_str</val>
@@ -44,7 +44,7 @@
                     <item>
                         <commod>c_pu</commod>
                         <info>
-                            <buf_size>1e100</buf_size>
+                            <buf_size>20000</buf_size>
                             <efficiencies>
                                 <item> <comp>Pu</comp> <eff>.99</eff> </item>
                             </efficiencies>
