@@ -78,27 +78,16 @@
               <prototypes>
                   <val>separation</val>
                   <val>separation</val>
-                  <val>separation</val>
-                  <val>separation</val>
-                  <val>separation</val>
-                  <val>separation</val>
               </prototypes>
+
               <n_build>
                   <val>1</val>
-<val>1</val>
-<val>1</val>
-<val>1</val>
-<val>1</val>
-<val>1</val>
+                  <val>1</val>
               </n_build>
 
               <build_times>
                   <val>420</val>
-<val>564</val>
-<val>1200</val>
-<val>1572</val>
-<val>2004</val>
-<val>2148</val>
+                  <val>12000</val>
               </build_times>
 
           </DeployInst>
