@@ -1,0 +1,59 @@
+</My_include>
+
+
+  <prototype>
+    <name>deployer</name>
+    <config>
+      <DeployInst>
+        <prototypes>
+          <val>waste</val>
+          <val>enrichment</val>
+          <val>src_depleted</val>
+          <val>str_du</val>
+          <val>str_ru</val>
+          <val>str_pu</val>
+        </prototypes>
+
+        <build_times>
+          <val>1</val>
+          <val>1</val>
+          <val>1</val>
+          <val>1</val>
+          <val>1</val>
+          <val>1</val>
+        </build_times>
+
+        <n_build>
+          <val>1</val>
+          <val>1</val>
+          <val>1</val>
+          <val>1</val>
+          <val>1</val>
+          <val>1</val>
+        </n_build>
+      </DeployInst>
+    </config>
+  </prototype>
+
+  <prototype>
+      <name>Sep_deployer</name>
+      <config>
+          <DeployInst>
+              <prototypes>
+                  <val>separation</val>
+                  <val>separation</val>
+              </prototypes>
+
+              <n_build>
+                  <val>1</val>
+                  <val>1</val>
+              </n_build>
+
+              <build_times>
+                  <val>420</val>
+                  <val>12000</val>
+              </build_times>
+
+          </DeployInst>
+      </config>
+  </prototype>
