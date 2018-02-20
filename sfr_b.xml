@@ -56,44 +56,36 @@
                     <val>sfr_b</val>
                     <val>sfr_b</val>
                     <val>sfr_b</val>
-                    <val>sfr_b</val>
-                    <val>sfr_b</val>
-                    <val>sfr_b</val>
-                    <val>sfr_b</val>
                 </prototypes>
                 <n_build>
-                    <val>18</val>
-                    <val>22</val>
-                    <val>21</val>
-                    <val>22</val>
-                    <val>22</val>
-                    <val>22</val>
-                    <val>22</val>
-                    <val>24</val>
-                    <val>23</val>
-                    <val>23</val>
-                    <val>23</val>
-                    <val>30</val>
-                    <val>29</val>
-                    <val>31</val>
-                    <val>32</val>
-                    <val>31</val>
-                    <val>29</val>
-                    <val>32</val>
-                    <val>30</val>
-                    <val>35</val>
-                    <val>30</val>
-                    <val>33</val>
-                    <val>33</val>
-                    <val>33</val>
-                    <val>31</val>
-                    <val>34</val>
-                    <val>34</val>
-                    <val>34</val>
-                    <val>33</val>
-                    <val>37</val>
-                    <val>32</val>
-                    <val>38</val>
+                    <val>2</val>
+                    <val>2</val>
+                    <val>3</val>
+                    <val>2</val>
+                    <val>2</val>
+                    <val>2</val>
+                    <val>2</val>
+                    <val>3</val>
+                    <val>2</val>
+                    <val>2</val>
+                    <val>3</val>
+                    <val>3</val>
+                    <val>3</val>
+                    <val>3</val>
+                    <val>3</val>
+                    <val>3</val>
+                    <val>3</val>
+                    <val>3</val>
+                    <val>3</val>
+                    <val>4</val>
+                    <val>3</val>
+                    <val>3</val>
+                    <val>3</val>
+                    <val>3</val>
+                    <val>4</val>
+                    <val>3</val>
+                    <val>3</val>
+                    <val>4</val>
                 </n_build>
                 <build_times>
                     <val>1969</val>
@@ -124,10 +116,6 @@
                     <val>2269</val>
                     <val>2281</val>
                     <val>2293</val>
-                    <val>2305</val>
-                    <val>2317</val>
-                    <val>2329</val>
-                    <val>2341</val>
                 </build_times>
             </DeployInst>
         </config>

@@ -18,78 +18,18 @@
           <val>lwr_a</val>
           <val>lwr_a</val>
           <val>lwr_a</val>
-          <val>lwr_a</val>
-          <val>lwr_a</val>
-          <val>lwr_a</val>
-          <val>lwr_a</val>
-          <val>lwr_a</val>
-          <val>lwr_a</val>
-          <val>lwr_a</val>
-          <val>lwr_a</val>
-          <val>lwr_a</val>
-          <val>lwr_a</val>
-          <val>lwr_a</val>
-          <val>lwr_a</val>
-          <val>lwr_a</val>
-          <val>lwr_a</val>
-          <val>lwr_a</val>
-          <val>lwr_a</val>
-          <val>lwr_a</val>
-          <val>lwr_a</val>
-          <val>lwr_a</val>
-          <val>lwr_a</val>
-          <val>lwr_a</val>
-          <val>lwr_a</val>
-          <val>lwr_a</val>
-          <val>lwr_a</val>
-          <val>lwr_a</val>
-          <val>lwr_a</val>
-          <val>lwr_a</val>
-          <val>lwr_a</val>
-          <val>lwr_a</val>
-          <val>lwr_a</val>
         </prototypes>
         <n_build>
-          <val>3</val>
-          <val>2</val>
-          <val>3</val>
-          <val>2</val>
-          <val>3</val>
-          <val>2</val>
-          <val>3</val>
-          <val>2</val>
-          <val>3</val>
-          <val>2</val>
-          <val>3</val>
-          <val>2</val>
-          <val>3</val>
-          <val>2</val>
-          <val>3</val>
-          <val>2</val>
-          <val>3</val>
-          <val>2</val>
-          <val>3</val>
-          <val>2</val>
-          <val>3</val>
-          <val>2</val>
-          <val>3</val>
-          <val>2</val>
-          <val>3</val>
-          <val>2</val>
-          <val>3</val>
-          <val>2</val>
-          <val>3</val>
-          <val>2</val>
-          <val>3</val>
-          <val>2</val>
-          <val>3</val>
-          <val>2</val>
-          <val>3</val>
-          <val>2</val>
-          <val>3</val>
-          <val>2</val>
-          <val>3</val>
-          <val>2</val>
+          <val>1</val>
+          <val>1</val>
+          <val>1</val>
+          <val>1</val>
+          <val>1</val>
+          <val>1</val>
+          <val>1</val>
+          <val>1</val>
+          <val>1</val>
+          <val>1</val>
         </n_build>
         <build_times>
           <val>1</val>
@@ -102,78 +42,18 @@
           <val>1</val>
           <val>1</val>
           <val>1</val>
-          <val>1</val>
-          <val>1</val>
-          <val>1</val>
-          <val>1</val>
-          <val>1</val>
-          <val>1</val>
-          <val>1</val>
-          <val>1</val>
-          <val>1</val>
-          <val>1</val>
-          <val>1</val>
-          <val>1</val>
-          <val>1</val>
-          <val>1</val>
-          <val>1</val>
-          <val>1</val>
-          <val>1</val>
-          <val>1</val>
-          <val>1</val>
-          <val>1</val>
-          <val>1</val>
-          <val>1</val>
-          <val>1</val>
-          <val>1</val>
-          <val>1</val>
-          <val>1</val>
-          <val>1</val>
-          <val>1</val>
-          <val>1</val>
-          <val>1</val>
         </build_times>
         <lifetimes>
-          <val>181</val>
-          <val>193</val>
-          <val>205</val>
-          <val>217</val>
-          <val>229</val>
-          <val>241</val>
-          <val>253</val>
-          <val>265</val>
-          <val>277</val>
-          <val>289</val>
-          <val>301</val>
-          <val>313</val>
-          <val>325</val>
-          <val>337</val>
-          <val>349</val>
-          <val>361</val>
-          <val>373</val>
-          <val>385</val>
-          <val>397</val>
-          <val>409</val>
-          <val>421</val>
-          <val>433</val>
-          <val>445</val>
-          <val>457</val>
-          <val>469</val>
-          <val>481</val>
-          <val>493</val>
-          <val>505</val>
-          <val>517</val>
-          <val>529</val>
-          <val>541</val>
-          <val>553</val>
-          <val>565</val>
-          <val>577</val>
-          <val>589</val>
-          <val>601</val>
-          <val>613</val>
-          <val>625</val>
-          <val>637</val>
-          <val>649</val>
+          <val>218</val>
+          <val>266</val>
+          <val>314</val>
+          <val>362</val>
+          <val>410</val>
+          <val>458</val>
+          <val>506</val>
+          <val>554</val>
+          <val>602</val>
+          <val>650</val>
         </lifetimes>
       </DeployInst>
     </config>
