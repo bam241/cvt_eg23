@@ -8,10 +8,10 @@
   <xi:include href="recipe.xml" xpointer="xpointer(//My_include/*)"/>
   <xi:include href="sep_fab.xml" xpointer="xpointer(//My_include/*)"/>
   
-  <xi:include href="lwr_a.xml" xpointer="xpointer(//My_include/*)"/>
-  <xi:include href="lwr_b.xml" xpointer="xpointer(//My_include/*)"/>
-  <xi:include href="sfr_a.xml" xpointer="xpointer(//My_include/*)"/>
-  <xi:include href="sfr_b.xml" xpointer="xpointer(//My_include/*)"/>
+  <xi:include href="deployement_lwr_a.xml" xpointer="xpointer(//My_include/*)"/>
+  <xi:include href="deployement_lwr_b.xml" xpointer="xpointer(//My_include/*)"/>
+  <xi:include href="deployement_sfr_a.xml" xpointer="xpointer(//My_include/*)"/>
+  <xi:include href="deployement_sfr_b.xml" xpointer="xpointer(//My_include/*)"/>
   <xi:include href="deployer.xml" xpointer="xpointer(//My_include/*)"/>
 
 
