@@ -1,0 +1,76 @@
+<My_include>
+
+    <prototype>
+        <name>fabrication_deployer_sfr</name>
+        <config>
+            <DeployInst>
+                <prototypes>
+                    <val>fab_sfr</val>
+                    <val>fab_sfr</val>
+                    <val>fab_sfr</val>
+                    <val>fab_sfr</val>
+                    <val>fab_sfr</val>
+                    <val>fab_sfr</val>
+                    <val>fab_sfr</val>
+                    <val>fab_sfr</val>
+                    <val>fab_sfr</val>
+                    <val>fab_sfr</val>
+                    <val>fab_sfr</val>
+                    <val>fab_sfr</val>
+                    <val>fab_sfr</val>
+                    <val>fab_sfr</val>
+                    <val>fab_sfr</val>
+                    <val>fab_sfr</val>
+                    <val>fab_sfr</val>
+                    <val>fab_sfr</val>
+                    <val>fab_sfr</val>
+                </prototypes>
+
+                <n_build>
+                    <val>2</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>2</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>2</val>
+                    <val>1</val>
+                    <val>1</val>
+                </n_build>
+
+                <build_times>
+                    <val>684</val>
+                    <val>816</val>
+                    <val>1080</val>
+                    <val>1212</val>
+                    <val>1344</val>
+                    <val>1548</val>
+                    <val>1668</val>
+                    <val>1812</val>
+                    <val>1992</val>
+                    <val>2004</val>
+                    <val>2028</val>
+                    <val>2064</val>
+                    <val>2076</val>
+                    <val>2112</val>
+                    <val>2160</val>
+                    <val>2184</val>
+                    <val>2208</val>
+                    <val>2244</val>
+                    <val>2280</val>
+                </build_times>
+            </DeployInst>
+        </config>
+    </prototype>
+
+</My_include>
