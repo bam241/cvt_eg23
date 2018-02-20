@@ -16,6 +16,7 @@
   <xi:include href="deployement_lwr_b.xml" xpointer="xpointer(//My_include/*)"/>
   <xi:include href="deployement_sfr_a.xml" xpointer="xpointer(//My_include/*)"/>
   <xi:include href="deployement_sfr_b.xml" xpointer="xpointer(//My_include/*)"/>
+  <xi:include href="deployement_sfr_fab.xml" xpointer="xpointer(//My_include/*)"/>
   <xi:include href="deployer.xml" xpointer="xpointer(//My_include/*)"/>
 
 
@@ -35,21 +36,6 @@
   <agent> <name>r_deployer_sfr_a</name> <prototype>reactor_deployer_sfr_a</prototype> </agent>
   <agent> <name>r_deployer_sfr_b</name> <prototype>reactor_deployer_sfr_b</prototype> </agent>
 
-  <agent> <name>f_deployer_sfr_a</name> <prototype>fabrication_deployer_sfr_a</prototype> </agent>
-  <!--
-  <agent> <name>f_deployer_sfr_b</name> <prototype>fabrication_deployer_sfr_b</prototype> </agent>
--->
-
-
-
-
-
-
-
-
-
-
-
-
+  <agent> <name>f_deployer_sfr_a</name> <prototype>fabrication_deployer_sfr</prototype> </agent>
 
 </simulation>
