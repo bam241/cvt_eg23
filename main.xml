@@ -3,11 +3,15 @@
 
   <xi:include href="header.xml" xpointer="xpointer(//My_include/*)"/>
 
-  <xi:include href="cycamore_reactor.xml" xpointer="xpointer(//My_include/*)"/>
   <xi:include href="fix_fac.xml" xpointer="xpointer(//My_include/*)"/>
   <xi:include href="recipe.xml" xpointer="xpointer(//My_include/*)"/>
-  <xi:include href="sep_fab.xml" xpointer="xpointer(//My_include/*)"/>
-  
+  <xi:include href="sep_enrich.xml" xpointer="xpointer(//My_include/*)"/>
+
+
+  <xi:include href="cycamore_reactor.xml" xpointer="xpointer(//My_include/*)"/>
+  <xi:include href="cycamore_fab.xml" xpointer="xpointer(//My_include/*)"/>
+
+
   <xi:include href="deployement_lwr_a.xml" xpointer="xpointer(//My_include/*)"/>
   <xi:include href="deployement_lwr_b.xml" xpointer="xpointer(//My_include/*)"/>
   <xi:include href="deployement_sfr_a.xml" xpointer="xpointer(//My_include/*)"/>
