@@ -3,19 +3,32 @@
         <name>lwr_a</name>
         <lifetime>960</lifetime>
         <config>
-            <Reactor>
-                <fuel_inrecipes>  <val>r_uox</val></fuel_inrecipes>
-                <fuel_outrecipes> <val>r_uox_s</val></fuel_outrecipes>
+            <cyclassReactor>
                 <fuel_incommods>  <val>c_uox</val></fuel_incommods>
                 <fuel_outcommods> <val>c_uox_a_s</val></fuel_outcommods>
 
+
+                <eq_model>EQM_1P</eq_model>
+                <eq_command>/Users/mouginot/work/app/CLASS/DATA_BASES/PWR/UOX/EQModel/XML/PWR_UOX.xml,/Users/mouginot/work/app/CLASS/DATA_BASES/PWR/UOX/EQModel/NFO/PWR_UOX.nfo,3,1.034</eq_command>
+
+                <ir_model>RK4</ir_model>
+                <ir_command>none</ir_command>
+
+                <xs_model>XSM_MLP</xs_model>
+                <xs_command>/Users/mouginot/work/app/CLASS/DATA_BASES/PWR/UOX/XSModel/30Wg_FullUOX/,Data_Base_Info.nfo,false</xs_command>
+
+                <fuel_type>uox</fuel_type>
+
                 <cycle_time>18</cycle_time>
                 <refuel_time>0</refuel_time>
-                <assem_size>29565</assem_size>
-                <n_assem_core>3</n_assem_core>
-                <n_assem_batch>1</n_assem_batch>
+
+                <batch_size>29565</batch_size>
+                <n_batch_core>3</n_batch_core>
+                
                 <power_cap>900</power_cap>
-            </Reactor>
+                <power>2700</power>
+                <burnup>30</burnup>
+            </cyclassReactor>
         </config>
     </prototype>
 
@@ -23,18 +36,32 @@
         <name>lwr_b</name>
         <lifetime>960</lifetime>
         <config>
-            <Reactor>
-                <fuel_inrecipes>  <val>r_uox</val></fuel_inrecipes>
-                <fuel_outrecipes> <val>r_uox_s</val></fuel_outrecipes>
+            <cyclassReactor>
                 <fuel_incommods>  <val>c_uox</val></fuel_incommods>
-                <fuel_outcommods> <val>c_uox_b_s</val></fuel_outcommods>
+                <fuel_outcommods> <val>c_uox_a_s</val></fuel_outcommods>
+
+
+                <eq_model>EQM_1P</eq_model>
+                <eq_command>/Users/mouginot/work/app/CLASS/DATA_BASES/PWR/UOX/EQModel/XML/PWR_UOX.xml,/Users/mouginot/work/app/CLASS/DATA_BASES/PWR/UOX/EQModel/NFO/PWR_UOX.nfo,3,1.034</eq_command>
+
+                <ir_model>RK4</ir_model>
+                <ir_command>none</ir_command>
+
+                <xs_model>XSM_MLP</xs_model>
+                <xs_command>/Users/mouginot/work/app/CLASS/DATA_BASES/PWR/UOX/XSModel/30Wg_FullUOX/,Data_Base_Info.nfo,false</xs_command>
+                
+                <fuel_type>uox</fuel_type>
+                
                 <cycle_time>18</cycle_time>
                 <refuel_time>0</refuel_time>
-                <assem_size>29565</assem_size>
-                <n_assem_core>3</n_assem_core>
-                <n_assem_batch>1</n_assem_batch>
+
+                <batch_size>29565</batch_size>
+                <n_batch_core>3</n_batch_core>
+
                 <power_cap>900</power_cap>
-            </Reactor>
+                <power>2700</power>
+                <burnup>30</burnup>
+            </cyclassReactor>    
         </config>
     </prototype>
 
@@ -42,19 +69,27 @@
         <name>sfr_a</name>
         <lifetime>960</lifetime>
         <config>
-            <Reactor>
-                <fuel_inrecipes>  <val>r_sfr_a_fuel</val></fuel_inrecipes>
-                <fuel_outrecipes> <val>r_sfr_a_s</val></fuel_outrecipes>
+            <cyclassReactor>
+                <eq_model>EQM_1P</eq_model>
+                <eq_command>/Users/mouginot/work/MODEL/MOX_TRU_MODELS/RNR/EQM/weights/TMVARegression_MLP_k_eff.weights.xml,/Users/mouginot/work/MODEL/MOX_TRU_MODELS/RNR/EQM/RNR_MOX_48.1155Wg.nfo,1.034</eq_command>
+
+                <ir_model>RK4</ir_model>
+                <ir_command>none</ir_command>
+
+                <xs_model>XSM_MLP</xs_model>
+                <xs_command>/Users/mouginot/work/MODEL/MOX_TRU_MODELS/RNR/XS/weights,/../Data_Base_Info.nfo,false</xs_command>
                 <fuel_incommods>  <val>c_sfr_fuel</val></fuel_incommods>
                 <fuel_outcommods> <val>c_sfr_a_s</val></fuel_outcommods>
 
                 <cycle_time>22</cycle_time>
                 <refuel_time>0</refuel_time>
-                <assem_size>12540</assem_size>
-                <n_assem_core>3</n_assem_core>
-                <n_assem_batch>1</n_assem_batch>
+                <batch_size>12540</batch_size>
+                <n_batch_core>3</n_batch_core>
+                
                 <power_cap>360</power_cap>
-            </Reactor>
+                <power>1080</power>
+                <burnup>30</burnup>
+            </cyclassReactor>
         </config>
     </prototype>
 
@@ -62,19 +97,27 @@
         <name>sfr_b</name>
         <lifetime>960</lifetime>
         <config>
-            <Reactor>
-                <fuel_inrecipes>  <val>r_sfr_b_fuel</val></fuel_inrecipes>
-                <fuel_outrecipes> <val>r_sfr_b_s</val></fuel_outrecipes>
+            <cyclassReactor>
+                <eq_model>EQM_1P</eq_model>
+                <eq_command>/Users/mouginot/work/MODEL/MOX_TRU_MODELS/RNR/EQM/weights/TMVARegression_MLP_k_eff.weights.xml,/Users/mouginot/work/MODEL/MOX_TRU_MODELS/RNR/EQM/RNR_MOX_48.1155Wg.nfo,1.034</eq_command>
+
+                <ir_model>RK4</ir_model>
+                <ir_command>none</ir_command>
+
+                <xs_model>XSM_MLP</xs_model>
+                <xs_command>/Users/mouginot/work/MODEL/MOX_TRU_MODELS/RNR/XS/weights,/../Data_Base_Info.nfo,false</xs_command>
                 <fuel_incommods>  <val>c_sfr_fuel</val></fuel_incommods>
                 <fuel_outcommods> <val>c_sfr_b_s</val></fuel_outcommods>
 
                 <cycle_time>18</cycle_time>
                 <refuel_time>0</refuel_time>
-                <assem_size>11467</assem_size>
-                <n_assem_core>3</n_assem_core>
-                <n_assem_batch>1</n_assem_batch>
+                <batch_size>11467</batch_size>
+                <n_batch_core>3</n_batch_core>
+                
                 <power_cap>360</power_cap>
-            </Reactor>
+                <power>1080</power>
+                <burnup>30</burnup>
+            </cyclassReactor>
         </config>
     </prototype>
 

@@ -8,8 +8,12 @@
   <xi:include href="sep_enrich.xml" xpointer="xpointer(//My_include/*)"/>
 
 
-  <xi:include href="cycamore_reactor.xml" xpointer="xpointer(//My_include/*)"/>
-  <xi:include href="cycamore_fab.xml" xpointer="xpointer(//My_include/*)"/>
+  <!--<xi:include href="cycamore_reactor.xml" xpointer="xpointer(//My_include/*)"/>
+  <xi:include href="cycamore_fab.xml"
+       xpointer="xpointer(//My_include/*)"/>-->
+  
+  <xi:include href="cyclass_fab.xml" xpointer="xpointer(//My_include/*)"/>
+  <xi:include href="cyclass_reactor.xml" xpointer="xpointer(//My_include/*)"/>
 
 
   <xi:include href="deployement_lwr_a.xml" xpointer="xpointer(//My_include/*)"/>

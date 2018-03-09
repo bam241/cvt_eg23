@@ -1,18 +1,17 @@
 <My_include>
 
     <prototype>
-        <name>sfr</name>
+        <name>fab_sfr</name>
         <config>
             <cyclassFuelFab>
 
-                <eq_model>FBR_MLP_Keff</eq_model>
-                <eq_command>/Users/mouginot/work/MODEL/MODEL_TRU/rnr/EQM/weights/TMVARegression_MLP_k_eff.weights.xml,1.034,/Users/mouginot/work/MODEL/MODEL_TRU/rnr/EQM/RNR_MOX_48.1155Wg.nfo</eq_command>
+                <eq_model>EQM_1P</eq_model>
+                <eq_command>/Users/mouginot/work/MODEL/MOX_TRU_MODELS/RNR/EQM/weights/TMVARegression_MLP_k_eff.weights.xml,/Users/mouginot/work/MODEL/MOX_TRU_MODELS/RNR/EQM/RNR_MOX_48.1155Wg.nfo,1.034</eq_command>
                 <fiss_commods>
-                    <val>FBR_TRU</val>
+                    <val>c_pu_str</val>
                 </fiss_commods>
-                <fiss_size>4000</fiss_size>
+                <fiss_size>50000</fiss_size>
 
-                <fill_recipe>r_du</fill_recipe>
                 <fill_commods>
                     <val>c_ru_str</val>
                     <val>c_du_str</val>
@@ -24,29 +23,12 @@
                     <val>10</val>
                     <val>1</val>
                 </fill_commod_prefs>
-                <fill_size>380</fill_size>
-
-                <throughput>4375</throughput>
-                <outcommod>FBR_MOX_N</outcommod>
-            </cyclassFuelFab>
-        </config>
-    </prototype>
-    <prototype>
-        <name>fab_sfr</name>
-        <config>
-            <FuelFab>
                 <fill_recipe>r_du</fill_recipe>
-                <fill_size>1e100</fill_size>
+                <fill_size>18500</fill_size>
 
-                <fiss_commods>
-                    <val>c_pu_str</val>
-                </fiss_commods>
-                <fiss_size>1e100</fiss_size>
-
-                <throughput>1e100</throughput>
-                <spectrum>fission_spectrum_ave</spectrum>
+                <throughput>20000</throughput>
                 <outcommod>c_sfr_fuel</outcommod>
-            </FuelFab>
+            </cyclassFuelFab>
         </config>
     </prototype>
 
