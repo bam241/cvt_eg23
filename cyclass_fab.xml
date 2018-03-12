@@ -10,7 +10,7 @@
                 <fiss_commods>
                     <val>c_pu_str</val>
                 </fiss_commods>
-                <fiss_size>20000</fiss_size>
+                <fiss_size>1e100</fiss_size>
 
                 <fill_commods>
                     <val>c_ru_str</val>
@@ -24,9 +24,9 @@
                     <val>1</val>
                 </fill_commod_prefs>
                 <fill_recipe>r_du</fill_recipe>
-                <fill_size>20000</fill_size>
+                <fill_size>1e100</fill_size>
 
-                <throughput>20000</throughput>
+                <throughput>1e100</throughput>
                 <outcommod>c_sfr_fuel</outcommod>
             </cyclassFuelFab>
         </config>
