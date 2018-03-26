@@ -6,6 +6,11 @@
         <nuclide> <id>U235</id><comp>0.0025</comp></nuclide>
         <nuclide><id>U238</id><comp>0.9975</comp></nuclide>
     </recipe>
+    <recipe>
+        <name>r_pu</name>
+        <basis>mass</basis>
+        <nuclide> <id>pu239</id><comp>1</comp></nuclide>
+    </recipe>
 
     <recipe>
         <name>r_natl_u</name>

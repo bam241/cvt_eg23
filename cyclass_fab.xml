@@ -6,10 +6,13 @@
             <cyclassFuelFab>
 
                 <eq_model>EQM_1P</eq_model>
-                <eq_command>/Users/mouginot/work/MODEL/MOX_TRU_MODELS/RNR/EQM/weights/TMVARegression_MLP_k_eff.weights.xml,/Users/mouginot/work/MODEL/MOX_TRU_MODELS/RNR/EQM/RNR_MOX_48.1155Wg.nfo,1.034</eq_command>
+                <eq_command>/Users/mouginot/work/app/CLASS/DATA_BASES/FBR_Na/MOX/EQModel/XML/ESFR_MOX_keffBOC.xml,/Users/mouginot/work/app/CLASS/DATA_BASES/FBR_Na/MOX/EQModel/NFO/ESFR_MOX_keffBOC.nfo,0.8</eq_command>
                 <fiss_commods>
                     <val>c_pu_str</val>
                 </fiss_commods>
+                <fiss_commod_prefs>
+                    <val>100</val>
+                </fiss_commod_prefs>
                 <fiss_size>1e100</fiss_size>
 
                 <fill_commods>

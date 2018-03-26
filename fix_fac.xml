@@ -32,6 +32,16 @@
             </Source>
         </config>
     </prototype>
+    <prototype>
+        <name>src_pu</name>
+        <config>
+            <Source>
+                <outcommod>c_pu_src</outcommod>
+                <outrecipe>r_pu</outrecipe>
+                <throughput>1e100</throughput>
+            </Source>
+        </config>
+    </prototype>
 
     <prototype>
         <name>waste</name>

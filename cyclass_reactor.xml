@@ -27,7 +27,7 @@
                 
                 <power_cap>900</power_cap>
                 <power>2700</power>
-                <burnup>30</burnup>
+                <burnup>50</burnup>
             </cyclassReactor>
         </config>
     </prototype>
@@ -60,7 +60,7 @@
 
                 <power_cap>900</power_cap>
                 <power>2700</power>
-                <burnup>30</burnup>
+                <burnup>50</burnup>
             </cyclassReactor>    
         </config>
     </prototype>
@@ -71,13 +71,13 @@
         <config>
             <cyclassReactor>
                 <eq_model>EQM_1P</eq_model>
-                <eq_command>/Users/mouginot/work/MODEL/MOX_TRU_MODELS/RNR/EQM/weights/TMVARegression_MLP_k_eff.weights.xml,/Users/mouginot/work/MODEL/MOX_TRU_MODELS/RNR/EQM/RNR_MOX_48.1155Wg.nfo,1.034</eq_command>
+                <eq_command>/Users/mouginot/work/app/CLASS/DATA_BASES/FBR_Na/MOX/EQModel/XML/ESFR_MOX_keffBOC.xml,/Users/mouginot/work/app/CLASS/DATA_BASES/FBR_Na/MOX/EQModel/NFO/ESFR_MOX_keffBOC.nfo,0.8</eq_command>
 
                 <ir_model>RK4</ir_model>
                 <ir_command>none</ir_command>
 
                 <xs_model>XSM_MLP</xs_model>
-                <xs_command>/Users/mouginot/work/MODEL/MOX_TRU_MODELS/RNR/XS/weights,/../Data_Base_Info.nfo,false</xs_command>
+                <xs_command>/Users/mouginot/work/app/CLASS/DATA_BASES/FBR_Na/MOX/XSModel/ESFR_48Wg/,Data_Base_Info.nfo,false</xs_command>
                 <fuel_incommods>  <val>c_sfr_fuel</val></fuel_incommods>
                 <fuel_outcommods> <val>c_sfr_a_s</val></fuel_outcommods>
 
@@ -88,7 +88,7 @@
                 
                 <power_cap>360</power_cap>
                 <power>1080</power>
-                <burnup>30</burnup>
+                <burnup>47.5</burnup>
             </cyclassReactor>
         </config>
     </prototype>
@@ -99,13 +99,13 @@
         <config>
             <cyclassReactor>
                 <eq_model>EQM_1P</eq_model>
-                <eq_command>/Users/mouginot/work/MODEL/MOX_TRU_MODELS/RNR/EQM/weights/TMVARegression_MLP_k_eff.weights.xml,/Users/mouginot/work/MODEL/MOX_TRU_MODELS/RNR/EQM/RNR_MOX_48.1155Wg.nfo,1.034</eq_command>
+                <eq_command>/Users/mouginot/work/app/CLASS/DATA_BASES/FBR_Na/MOX/EQModel/XML/ESFR_MOX_keffBOC.xml,/Users/mouginot/work/app/CLASS/DATA_BASES/FBR_Na/MOX/EQModel/NFO/ESFR_MOX_keffBOC.nfo,0.8</eq_command>
 
                 <ir_model>RK4</ir_model>
                 <ir_command>none</ir_command>
 
                 <xs_model>XSM_MLP</xs_model>
-                <xs_command>/Users/mouginot/work/MODEL/MOX_TRU_MODELS/RNR/XS/weights,/../Data_Base_Info.nfo,false</xs_command>
+                <xs_command>/Users/mouginot/work/app/CLASS/DATA_BASES/FBR_Na/MOX/XSModel/ESFR_48Wg/,Data_Base_Info.nfo,false</xs_command>
                 <fuel_incommods>  <val>c_sfr_fuel</val></fuel_incommods>
                 <fuel_outcommods> <val>c_sfr_b_s</val></fuel_outcommods>
 
@@ -116,7 +116,7 @@
                 
                 <power_cap>360</power_cap>
                 <power>1080</power>
-                <burnup>30</burnup>
+                <burnup>42.4</burnup>
             </cyclassReactor>
         </config>
     </prototype>
