@@ -6,14 +6,71 @@
             <DeployInst>
                 <prototypes>
                     <val>fab_sfr</val>
+                    <val>fab_sfr</val>
+                    <val>fab_sfr</val>
+                    <val>fab_sfr</val>
+                    <val>fab_sfr</val>
+                    <val>fab_sfr</val>
+                    <val>fab_sfr</val>
+                    <val>fab_sfr</val>
+                    <val>fab_sfr</val>
+                    <val>fab_sfr</val>
+                    <val>fab_sfr</val>
+                    <val>fab_sfr</val>
+                    <val>fab_sfr</val>
+                    <val>fab_sfr</val>
+                    <val>fab_sfr</val>
+                    <val>fab_sfr</val>
+                    <val>fab_sfr</val>
+                    <val>fab_sfr</val>
+                    <val>fab_sfr</val>
+                    <val>fab_sfr</val>
                 </prototypes>
 
                 <n_build>
                     <val>1</val>
+                    <val>1</val>
+                    <val>3</val>
+                    <val>2</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>2</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>2</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>1</val>
+                    <val>2</val>
+                    <val>1</val>
                 </n_build>
 
                 <build_times>
-                    <val>420</val>
+                    <val>455</val>
+                    <val>731</val>
+                    <val>1115</val>
+                    <val>1247</val>
+                    <val>1371</val>
+                    <val>1439</val>
+                    <val>1559</val>
+                    <val>1691</val>
+                    <val>1823</val>
+                    <val>1999</val>
+                    <val>2011</val>
+                    <val>2065</val>
+                    <val>2077</val>
+                    <val>2131</val>
+                    <val>2179</val>
+                    <val>2197</val>
+                    <val>2227</val>
+                    <val>2239</val>
+                    <val>2263</val>
+                    <val>2293</val>
                 </build_times>
             </DeployInst>
         </config>
