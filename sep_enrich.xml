@@ -10,7 +10,9 @@
                 <tails_commod>c_du</tails_commod>
 
 
-                <tails_assay>0.0025</tails_assay>
+                <tails_assay>0.003</tails_assay>
+                <tails_assay_uncertainty>0.01</tails_assay_uncertainty>
+                
                 <swu_capacity>1e100</swu_capacity>
                 <initial_feed>1e100</initial_feed>
             </Enrichment>
