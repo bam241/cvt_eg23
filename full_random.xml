@@ -198,7 +198,6 @@
                 </out_commods>
                 <residence_time>81</residence_time>
                 <residence_time_uncertainty>0.1</residence_time_uncertainty>
-                <systematic_uncertainty>1</systematic_uncertainty>
             </Storage>
         </config>
         <name>cool_lwr_a</name>
@@ -228,7 +227,6 @@
                 </out_commods>
                 <residence_time>81</residence_time>
                 <residence_time_uncertainty>0.1</residence_time_uncertainty>
-                <systematic_uncertainty>1</systematic_uncertainty>
             </Storage>
         </config>
         <name>cool_lwr_b</name>
@@ -258,7 +256,6 @@
                 </out_commods>
                 <residence_time>81</residence_time>
                 <residence_time_uncertainty>0.1</residence_time_uncertainty>
-                <systematic_uncertainty>1</systematic_uncertainty>
             </Storage>
         </config>
         <name>cool_sfr_a</name>
@@ -288,7 +285,6 @@
                 </out_commods>
                 <residence_time>81</residence_time>
                 <residence_time_uncertainty>0.1</residence_time_uncertainty>
-                <systematic_uncertainty>1</systematic_uncertainty>
             </Storage>
         </config>
         <name>cool_sfr_b</name>
@@ -303,7 +299,6 @@
                 <swu_capacity>1e100</swu_capacity>
                 <tails_assay>0.003</tails_assay>
                 <tails_assay_uncertainty>0.01</tails_assay_uncertainty>
-                <systematic_uncertainty>1</systematic_uncertainty>
                 <tails_commod>c_du</tails_commod>
             </Enrichment>
         </config>
@@ -360,7 +355,7 @@
     <prototype>
         <config>
             <cyclassFuelFab>
-                <eq_command>/tmp/mouginot/opt/CLASS/DATA_BASES/FBR_Na/MOX/EQModel/XML/ESFR_MOX_keffBOC.xml,/tmp/mouginot/opt/CLASS/DATA_BASES/FBR_Na/MOX/EQModel/NFO/ESFR_MOX_keffBOC.nfo,0.8</eq_command>
+                <eq_command>/Users/mouginot/work/app/CLASS/DATA_BASES/FBR_Na/MOX/EQModel/XML/ESFR_MOX_keffBOC.xml,/Users/mouginot/work/app/CLASS/DATA_BASES/FBR_Na/MOX/EQModel/NFO/ESFR_MOX_keffBOC.nfo,0.8</eq_command>
                 <eq_model>EQM_1P</eq_model>
                 <fill_commod_prefs>
                     <val>100</val>
@@ -395,7 +390,7 @@
                 <burnup_uncertainty>0.1</burnup_uncertainty>
                 <cycle_time>18</cycle_time>
                 <cycle_time_uncertainty>0.1</cycle_time_uncertainty>
-                <eq_command>/tmp/mouginot/opt/CLASS/DATA_BASES/PWR/UOX/EQModel/XML/PWR_UOX.xml,/tmp/mouginot/opt/CLASS/DATA_BASES/PWR/UOX/EQModel/NFO/PWR_UOX.nfo,3,1.034</eq_command>
+                <eq_command>/Users/mouginot/work/app/CLASS/DATA_BASES/PWR/UOX/EQModel/XML/PWR_UOX.xml,/Users/mouginot/work/app/CLASS/DATA_BASES/PWR/UOX/EQModel/NFO/PWR_UOX.nfo,3,1.034</eq_command>
                 <eq_model>EQM_1P</eq_model>
                 <fuel_incommods>
                     <val>c_uox</val>
@@ -410,9 +405,8 @@
                 <power>2700</power>
                 <power_cap>900</power_cap>
                 <power_uncertainty>0.1</power_uncertainty>
-                <systematic_uncertainty>1</systematic_uncertainty>
                 <refuel_time>0</refuel_time>
-                <xs_command>/tmp/mouginot/opt/CLASS/DATA_BASES/PWR/UOX/XSModel/30Wg_FullUOX/,Data_Base_Info.nfo,false</xs_command>
+                <xs_command>/Users/mouginot/work/app/CLASS/DATA_BASES/PWR/UOX/XSModel/30Wg_FullUOX/,Data_Base_Info.nfo,false</xs_command>
                 <xs_model>XSM_MLP</xs_model>
             </cyclassReactor>
         </config>
@@ -427,7 +421,7 @@
                 <burnup_uncertainty>0.1</burnup_uncertainty>
                 <cycle_time>18</cycle_time>
                 <cycle_time_uncertainty>0.1</cycle_time_uncertainty>
-                <eq_command>/tmp/mouginot/opt/CLASS/DATA_BASES/PWR/UOX/EQModel/XML/PWR_UOX.xml,/tmp/mouginot/opt/CLASS/DATA_BASES/PWR/UOX/EQModel/NFO/PWR_UOX.nfo,3,1.034</eq_command>
+                <eq_command>/Users/mouginot/work/app/CLASS/DATA_BASES/PWR/UOX/EQModel/XML/PWR_UOX.xml,/Users/mouginot/work/app/CLASS/DATA_BASES/PWR/UOX/EQModel/NFO/PWR_UOX.nfo,3,1.034</eq_command>
                 <eq_model>EQM_1P</eq_model>
                 <fuel_incommods>
                     <val>c_uox</val>
@@ -442,9 +436,8 @@
                 <power>2700</power>
                 <power_cap>900</power_cap>
                 <power_uncertainty>0.1</power_uncertainty>
-                <systematic_uncertainty>1</systematic_uncertainty>
                 <refuel_time>0</refuel_time>
-                <xs_command>/tmp/mouginot/opt/CLASS/DATA_BASES/PWR/UOX/XSModel/30Wg_FullUOX/,Data_Base_Info.nfo,false</xs_command>
+                <xs_command>/Users/mouginot/work/app/CLASS/DATA_BASES/PWR/UOX/XSModel/30Wg_FullUOX/,Data_Base_Info.nfo,false</xs_command>
                 <xs_model>XSM_MLP</xs_model>
             </cyclassReactor>
         </config>
@@ -456,11 +449,10 @@
             <cyclassReactor>
                 <batch_size>12540</batch_size>
                 <burnup>47.5</burnup>
-                <systematic_uncertainty>1</systematic_uncertainty>
                 <burnup_uncertainty>0.1</burnup_uncertainty>
                 <cycle_time>22</cycle_time>
                 <cycle_time_uncertainty>0.1</cycle_time_uncertainty>
-                <eq_command>/tmp/mouginot/opt/CLASS/DATA_BASES/FBR_Na/MOX/EQModel/XML/ESFR_MOX_keffBOC.xml,/tmp/mouginot/opt/CLASS/DATA_BASES/FBR_Na/MOX/EQModel/NFO/ESFR_MOX_keffBOC.nfo,0.8</eq_command>
+                <eq_command>/Users/mouginot/work/app/CLASS/DATA_BASES/FBR_Na/MOX/EQModel/XML/ESFR_MOX_keffBOC.xml,/Users/mouginot/work/app/CLASS/DATA_BASES/FBR_Na/MOX/EQModel/NFO/ESFR_MOX_keffBOC.nfo,0.8</eq_command>
                 <eq_model>EQM_1P</eq_model>
                 <fuel_incommods>
                     <val>c_sfr_fuel</val>
@@ -475,7 +467,7 @@
                 <power_cap>360</power_cap>
                 <power_uncertainty>0.1</power_uncertainty>
                 <refuel_time>0</refuel_time>
-                <xs_command>/tmp/mouginot/opt/CLASS/DATA_BASES/FBR_Na/MOX/XSModel/ESFR_48Wg/,Data_Base_Info.nfo,false</xs_command>
+                <xs_command>/Users/mouginot/work/app/CLASS/DATA_BASES/FBR_Na/MOX/XSModel/ESFR_48Wg/,Data_Base_Info.nfo,false</xs_command>
                 <xs_model>XSM_MLP</xs_model>
             </cyclassReactor>
         </config>
@@ -490,7 +482,7 @@
                 <burnup_uncertainty>0.1</burnup_uncertainty>
                 <cycle_time>18</cycle_time>
                 <cycle_time_uncertainty>0.1</cycle_time_uncertainty>
-                <eq_command>/tmp/mouginot/opt/CLASS/DATA_BASES/FBR_Na/MOX/EQModel/XML/ESFR_MOX_keffBOC.xml,/tmp/mouginot/opt/CLASS/DATA_BASES/FBR_Na/MOX/EQModel/NFO/ESFR_MOX_keffBOC.nfo,0.8</eq_command>
+                <eq_command>/Users/mouginot/work/app/CLASS/DATA_BASES/FBR_Na/MOX/EQModel/XML/ESFR_MOX_keffBOC.xml,/Users/mouginot/work/app/CLASS/DATA_BASES/FBR_Na/MOX/EQModel/NFO/ESFR_MOX_keffBOC.nfo,0.8</eq_command>
                 <eq_model>EQM_1P</eq_model>
                 <fuel_incommods>
                     <val>c_sfr_fuel</val>
@@ -504,9 +496,8 @@
                 <power>1080</power>
                 <power_cap>360</power_cap>
                 <power_uncertainty>0.1</power_uncertainty>
-                <systematic_uncertainty>1</systematic_uncertainty>
                 <refuel_time>0</refuel_time>
-                <xs_command>/tmp/mouginot/opt/CLASS/DATA_BASES/FBR_Na/MOX/XSModel/ESFR_48Wg/,Data_Base_Info.nfo,false</xs_command>
+                <xs_command>/Users/mouginot/work/app/CLASS/DATA_BASES/FBR_Na/MOX/XSModel/ESFR_48Wg/,Data_Base_Info.nfo,false</xs_command>
                 <xs_model>XSM_MLP</xs_model>
             </cyclassReactor>
         </config>
