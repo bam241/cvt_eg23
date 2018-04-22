@@ -32,12 +32,13 @@
             </Source>
         </config>
     </prototype>
+
     <prototype>
-        <name>src_pu</name>
+        <name>src_u_nat</name>
         <config>
             <Source>
-                <outcommod>c_pu_src</outcommod>
-                <outrecipe>r_pu</outrecipe>
+                <outcommod>c_u_src</outcommod>
+                <outrecipe>r_natl_u</outrecipe>
                 <throughput>1e100</throughput>
             </Source>
         </config>
@@ -86,7 +87,6 @@
                 <in_commods> <val>c_uox_a_s</val></in_commods>
                 <out_commods> <val>c_uox_a_sc</val></out_commods>
                 <residence_time>81</residence_time>
-                <residence_time_uncertainty>0.1</residence_time_uncertainty>
             </Storage>
         </config>
     </prototype>
@@ -109,7 +109,6 @@
                 <in_commods> <val>c_uox_b_s</val></in_commods>
                 <out_commods> <val>c_uox_b_sc</val></out_commods>
                 <residence_time>81</residence_time>
-                <residence_time_uncertainty>0.1</residence_time_uncertainty>
             </Storage>
         </config>
     </prototype>
@@ -132,7 +131,6 @@
                 <in_commods><val>c_sfr_a_s</val></in_commods>
                 <out_commods><val>c_sfr_a_sc</val></out_commods>
                 <residence_time>81</residence_time>
-                <residence_time_uncertainty>0.1</residence_time_uncertainty>
             </Storage>
         </config>
     </prototype>
@@ -155,7 +153,6 @@
                 <in_commods><val>c_sfr_b_s</val></in_commods>
                 <out_commods><val>c_sfr_b_sc</val></out_commods>
                 <residence_time>81</residence_time>
-                <residence_time_uncertainty>0.1</residence_time_uncertainty>
             </Storage>
         </config>
     </prototype>

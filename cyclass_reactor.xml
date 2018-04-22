@@ -20,7 +20,6 @@
                 <fuel_type>uox</fuel_type>
 
                 <cycle_time>18</cycle_time>
-                <cycle_time_uncertainty>0.1</cycle_time_uncertainty>
                 
                 <refuel_time>0</refuel_time>
 
@@ -29,7 +28,6 @@
                 
                 <power_cap>900</power_cap>
                 <power>2700</power>
-                <power_uncertainty>0.1</power_uncertainty>
                 <burnup>50</burnup>
             </cyclassReactor>
         </config>
@@ -56,7 +54,6 @@
                 <fuel_type>uox</fuel_type>
                 
                 <cycle_time>18</cycle_time>
-                <cycle_time_uncertainty>0.1</cycle_time_uncertainty>
                 <refuel_time>0</refuel_time>
 
                 <batch_size>29565</batch_size>
@@ -64,7 +61,6 @@
 
                 <power_cap>900</power_cap>
                 <power>2700</power>
-                <power_uncertainty>0.1</power_uncertainty>
                 <burnup>50</burnup>
             </cyclassReactor>    
         </config>
@@ -76,7 +72,7 @@
         <config>
             <cyclassReactor>
                 <eq_model>EQM_1P</eq_model>
-                <eq_command>/Users/mouginot/work/app/CLASS/DATA_BASES/FBR_Na/MOX/EQModel/XML/ESFR_MOX_keffBOC.xml,/Users/mouginot/work/app/CLASS/DATA_BASES/FBR_Na/MOX/EQModel/NFO/ESFR_MOX_keffBOC.nfo,0.8</eq_command>
+                <eq_command>/Users/mouginot/work/app/CLASS/DATA_BASES/FBR_Na/MOX/EQModel/XML/ESFR_MOX_keffBOC.xml,/Users/mouginot/work/app/CLASS/DATA_BASES/FBR_Na/MOX/EQModel/NFO/ESFR_MOX_keffBOC.nfo,1.1</eq_command>
 
                 <ir_model>RK4</ir_model>
                 <ir_command>none</ir_command>
@@ -87,14 +83,12 @@
                 <fuel_outcommods> <val>c_sfr_a_s</val></fuel_outcommods>
 
                 <cycle_time>22</cycle_time>
-                <cycle_time_uncertainty>0.1</cycle_time_uncertainty>
                 <refuel_time>0</refuel_time>
                 <batch_size>12540</batch_size>
                 <n_batch_core>3</n_batch_core>
                 
                 <power_cap>360</power_cap>
                 <power>1080</power>
-                <power_uncertainty>0.1</power_uncertainty>
                 <burnup>47.5</burnup>
             </cyclassReactor>
         </config>
@@ -106,7 +100,7 @@
         <config>
             <cyclassReactor>
                 <eq_model>EQM_1P</eq_model>
-                <eq_command>/Users/mouginot/work/app/CLASS/DATA_BASES/FBR_Na/MOX/EQModel/XML/ESFR_MOX_keffBOC.xml,/Users/mouginot/work/app/CLASS/DATA_BASES/FBR_Na/MOX/EQModel/NFO/ESFR_MOX_keffBOC.nfo,0.8</eq_command>
+                <eq_command>/Users/mouginot/work/app/CLASS/DATA_BASES/FBR_Na/MOX/EQModel/XML/ESFR_MOX_keffBOC.xml,/Users/mouginot/work/app/CLASS/DATA_BASES/FBR_Na/MOX/EQModel/NFO/ESFR_MOX_keffBOC.nfo,1.1</eq_command>
 
                 <ir_model>RK4</ir_model>
                 <ir_command>none</ir_command>
@@ -117,14 +111,12 @@
                 <fuel_outcommods> <val>c_sfr_b_s</val></fuel_outcommods>
 
                 <cycle_time>18</cycle_time>
-                <cycle_time_uncertainty>0.1</cycle_time_uncertainty>
                 <refuel_time>0</refuel_time>
                 <batch_size>11467</batch_size>
                 <n_batch_core>3</n_batch_core>
                 
                 <power_cap>360</power_cap>
                 <power>1080</power>
-                <power_uncertainty>0.1</power_uncertainty>
                 <burnup>42.4</burnup>
             </cyclassReactor>
         </config>

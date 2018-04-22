@@ -22,8 +22,8 @@
                 </fill_commods>
    
                 <fill_commod_prefs>
-                    <val>100</val>
                     <val>10</val>
+                    <val>100</val>
                     <val>1</val>
                 </fill_commod_prefs>
                 <fill_recipe>r_du</fill_recipe>

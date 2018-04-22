@@ -4,17 +4,15 @@
         <name>enrichment</name>
         <config>
             <Enrichment>
-                <feed_commod>c_natl_u</feed_commod>
+                <feed_commod>c_u_src</feed_commod>
                 <feed_recipe>r_natl_u</feed_recipe>
                 <product_commod>c_uox</product_commod>
                 <tails_commod>c_du</tails_commod>
 
 
                 <tails_assay>0.003</tails_assay>
-                <tails_assay_uncertainty>0.01</tails_assay_uncertainty>
                 
                 <swu_capacity>1e100</swu_capacity>
-                <initial_feed>1e100</initial_feed>
             </Enrichment>
         </config>
     </prototype>
@@ -45,7 +43,11 @@
                         <info>
                             <buf_size>5000</buf_size>
                             <efficiencies>
-                                <item> <comp>Pu</comp> <eff>.99</eff> </item>
+                                <item> <comp>238Pu</comp> <eff>.99</eff> </item>
+                                <item> <comp>239Pu</comp> <eff>.99</eff> </item>
+                                <item> <comp>240Pu</comp> <eff>.99</eff> </item>
+                                <item> <comp>241Pu</comp> <eff>.99</eff> </item>
+                                <item> <comp>242Pu</comp> <eff>.99</eff> </item>
                             </efficiencies>
                         </info>
                     </item>
@@ -54,7 +56,8 @@
                         <info>
                             <buf_size>1e100</buf_size>
                             <efficiencies>
-                                <item> <comp>U</comp> <eff>.99</eff> </item>
+                                <item> <comp>235U</comp> <eff>.99</eff> </item>
+                                <item> <comp>238U</comp> <eff>.99</eff> </item>
                             </efficiencies>
                         </info>
                     </item>
