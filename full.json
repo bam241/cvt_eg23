@@ -1,0 +1,1108 @@
+{
+ "simulation": {
+  "agent": [
+   {"name": "deployer1", "prototype": "deployer"}, 
+   {"name": "deployer2", "prototype": "deployer_supply_lwr_a"}, 
+   {"name": "deployer3", "prototype": "deployer_supply_lwr_b"}, 
+   {"name": "deployer4", "prototype": "deployer_supply_sfr_a"}, 
+   {"name": "deployer5", "prototype": "deployer_supply_sfr_b"}, 
+   {"name": "deployer6", "prototype": "Sep_deployer"}, 
+   {"name": "init_reactor", "prototype": "init_reactor_deployer_lwr_a"}, 
+   {"name": "r_deployer_lwr_b", "prototype": "reactor_deployer_lwr_b"}, 
+   {"name": "r_deployer_sfr_a", "prototype": "reactor_deployer_sfr_a"}, 
+   {"name": "r_deployer_sfr_b", "prototype": "reactor_deployer_sfr_b"}, 
+   {"name": "f_deployer_sfr_a", "prototype": "fabrication_deployer_sfr"}
+  ], 
+  "archetypes": {
+   "spec": [
+    {"lib": "cycamore", "name": "Source"}, 
+    {"lib": "cycamore", "name": "DeployInst"}, 
+    {"lib": "cycamore", "name": "Sink"}, 
+    {"lib": "cycamore", "name": "Enrichment"}, 
+    {"lib": "cycamore", "name": "Reactor"}, 
+    {"lib": "cycamore", "name": "Storage"}, 
+    {"lib": "cycamore", "name": "FuelFab"}, 
+    {"lib": "cycamore", "name": "Separations"}, 
+    {"lib": "cycamore", "name": "Reactor"}, 
+    {"alias": "cyclassReactor", "lib": "cyclass", "name": "Reactor"}, 
+    {"alias": "cyclassFuelFab", "lib": "cyclass", "name": "FuelFab"}
+   ]
+  }, 
+  "control": {
+   "decay": "never", 
+   "duration": "2400", 
+   "explicit_inventory": "true", 
+   "startmonth": "1", 
+   "startyear": "2000", 
+   "tolerance_resource": "1e-5"
+  }, 
+  "prototype": [
+   {
+    "config": {
+     "Storage": {
+      "in_commods": {"val": "c_pu"}, 
+      "out_commods": {"val": "c_pu_str"}, 
+      "residence_time": "0"
+     }
+    }, 
+    "name": "str_pu"
+   }, 
+   {
+    "config": {
+     "Storage": {
+      "in_commods": {"val": "c_ru"}, 
+      "out_commods": {"val": "c_ru_str"}, 
+      "residence_time": "0"
+     }
+    }, 
+    "name": "str_ru"
+   }, 
+   {
+    "config": {
+     "Source": {"outcommod": "c_du_src", "outrecipe": "r_du", "throughput": "1e100"}
+    }, 
+    "name": "src_depleted"
+   }, 
+   {
+    "config": {
+     "Source": {"outcommod": "c_u_src", "outrecipe": "r_natl_u", "throughput": "1e100"}
+    }, 
+    "name": "src_u_nat"
+   }, 
+   {
+    "config": {"Sink": {"capacity": "1e100", "in_commods": {"val": "c_waste"}}}, 
+    "name": "waste"
+   }, 
+   {
+    "config": {
+     "Storage": {
+      "in_commods": {"val": "c_du"}, 
+      "out_commods": {"val": "c_du_str"}, 
+      "residence_time": "0"
+     }
+    }, 
+    "name": "str_du"
+   }, 
+   {
+    "config": {
+     "Storage": {
+      "in_commods": {"val": "c_uox_a_sc"}, 
+      "out_commods": {"val": "c_uox_a_sc_str"}, 
+      "residence_time": "0"
+     }
+    }, 
+    "name": "str_lwr_a"
+   }, 
+   {
+    "config": {
+     "Storage": {
+      "in_commods": {"val": "c_uox_a_s"}, 
+      "out_commods": {"val": "c_uox_a_sc"}, 
+      "residence_time": "81"
+     }
+    }, 
+    "name": "cool_lwr_a"
+   }, 
+   {
+    "config": {
+     "Storage": {
+      "in_commods": {"val": "c_uox_b_sc"}, 
+      "out_commods": {"val": "c_uox_b_sc_str"}, 
+      "residence_time": "0"
+     }
+    }, 
+    "name": "str_lwr_b"
+   }, 
+   {
+    "config": {
+     "Storage": {
+      "in_commods": {"val": "c_uox_b_s"}, 
+      "out_commods": {"val": "c_uox_b_sc"}, 
+      "residence_time": "81"
+     }
+    }, 
+    "name": "cool_lwr_b"
+   }, 
+   {
+    "config": {
+     "Storage": {
+      "in_commods": {"val": "c_sfr_a_sc"}, 
+      "out_commods": {"val": "c_sfr_a_sc_str"}, 
+      "residence_time": "0"
+     }
+    }, 
+    "name": "str_sfr_a"
+   }, 
+   {
+    "config": {
+     "Storage": {
+      "in_commods": {"val": "c_sfr_a_s"}, 
+      "out_commods": {"val": "c_sfr_a_sc"}, 
+      "residence_time": "81"
+     }
+    }, 
+    "name": "cool_sfr_a"
+   }, 
+   {
+    "config": {
+     "Storage": {
+      "in_commods": {"val": "c_sfr_b_sc"}, 
+      "out_commods": {"val": "c_sfr_b_sc_str"}, 
+      "residence_time": "0"
+     }
+    }, 
+    "name": "str_sfr_b"
+   }, 
+   {
+    "config": {
+     "Storage": {
+      "in_commods": {"val": "c_sfr_b_s"}, 
+      "out_commods": {"val": "c_sfr_b_sc"}, 
+      "residence_time": "81"
+     }
+    }, 
+    "name": "cool_sfr_b"
+   }, 
+   {
+    "config": {
+     "Enrichment": {
+      "feed_commod": "c_u_src", 
+      "feed_recipe": "r_natl_u", 
+      "product_commod": "c_uox", 
+      "swu_capacity": "1e100", 
+      "tails_assay": "0.003", 
+      "tails_commod": "c_du"
+     }
+    }, 
+    "name": "enrichment"
+   }, 
+   {
+    "config": {
+     "Separations": {
+      "feed_commod_prefs": {"val": ["3.0", "3.0", "2.0", "1.0"]}, 
+      "feed_commods": {
+       "val": ["c_uox_a_sc_str", "c_uox_b_sc_str", "c_sfr_a_sc_str", "c_sfr_b_sc_str"]
+      }, 
+      "feedbuf_size": "50000", 
+      "leftover_commod": "c_waste", 
+      "streams": {
+       "item": [
+        {
+         "commod": "c_pu", 
+         "info": {
+          "buf_size": "5000", 
+          "efficiencies": {
+           "item": [
+            {"comp": "238Pu", "eff": ".99"}, 
+            {"comp": "239Pu", "eff": ".99"}, 
+            {"comp": "240Pu", "eff": ".99"}, 
+            {"comp": "241Pu", "eff": ".99"}, 
+            {"comp": "242Pu", "eff": ".99"}
+           ]
+          }
+         }
+        }, 
+        {
+         "commod": "c_ru", 
+         "info": {
+          "buf_size": "1e100", 
+          "efficiencies": {"item": [{"comp": "235U", "eff": ".99"}, {"comp": "238U", "eff": ".99"}]}
+         }
+        }
+       ]
+      }, 
+      "throughput": "1e100"
+     }
+    }, 
+    "name": "separation"
+   }, 
+   {
+    "config": {
+     "cyclassFuelFab": {
+      "eq_command": "/Users/mouginot/work/app/CLASS/DATA_BASES/FBR_Na/MOX/EQModel/XML/ESFR_MOX_keffBOC.xml,/Users/mouginot/work/app/CLASS/DATA_BASES/FBR_Na/MOX/EQModel/NFO/ESFR_MOX_keffBOC.nfo,0.8", 
+      "eq_model": "EQM_1P", 
+      "fill_commod_prefs": {"val": ["10", "100", "1"]}, 
+      "fill_commods": {"val": ["c_ru_str", "c_du_str", "c_du_src"]}, 
+      "fill_recipe": "r_du", 
+      "fill_size": "20000", 
+      "fiss_commod_prefs": {"val": "100"}, 
+      "fiss_commods": {"val": "c_pu_str"}, 
+      "fiss_size": "2000", 
+      "outcommod": "c_sfr_fuel", 
+      "throughput": "20000"
+     }
+    }, 
+    "name": "fab_sfr"
+   }, 
+   {
+    "config": {
+     "cyclassReactor": {
+      "batch_size": "29565", 
+      "burnup": "50", 
+      "cycle_time": "18", 
+      "eq_command": "/Users/mouginot/work/app/CLASS/DATA_BASES/PWR/UOX/EQModel/XML/PWR_UOX.xml,/Users/mouginot/work/app/CLASS/DATA_BASES/PWR/UOX/EQModel/NFO/PWR_UOX.nfo,3,1.034", 
+      "eq_model": "EQM_1P", 
+      "fuel_incommods": {"val": "c_uox"}, 
+      "fuel_outcommods": {"val": "c_uox_a_s"}, 
+      "fuel_type": "uox", 
+      "ir_command": "none", 
+      "ir_model": "RK4", 
+      "n_batch_core": "3", 
+      "power": "2700", 
+      "power_cap": "900", 
+      "refuel_time": "0", 
+      "xs_command": "/Users/mouginot/work/app/CLASS/DATA_BASES/PWR/UOX/XSModel/30Wg_FullUOX/,Data_Base_Info.nfo,false", 
+      "xs_model": "XSM_MLP"
+     }
+    }, 
+    "lifetime": "960", 
+    "name": "lwr_a"
+   }, 
+   {
+    "config": {
+     "cyclassReactor": {
+      "batch_size": "29565", 
+      "burnup": "50", 
+      "cycle_time": "18", 
+      "eq_command": "/Users/mouginot/work/app/CLASS/DATA_BASES/PWR/UOX/EQModel/XML/PWR_UOX.xml,/Users/mouginot/work/app/CLASS/DATA_BASES/PWR/UOX/EQModel/NFO/PWR_UOX.nfo,3,1.034", 
+      "eq_model": "EQM_1P", 
+      "fuel_incommods": {"val": "c_uox"}, 
+      "fuel_outcommods": {"val": "c_uox_a_s"}, 
+      "fuel_type": "uox", 
+      "ir_command": "none", 
+      "ir_model": "RK4", 
+      "n_batch_core": "3", 
+      "power": "2700", 
+      "power_cap": "900", 
+      "refuel_time": "0", 
+      "xs_command": "/Users/mouginot/work/app/CLASS/DATA_BASES/PWR/UOX/XSModel/30Wg_FullUOX/,Data_Base_Info.nfo,false", 
+      "xs_model": "XSM_MLP"
+     }
+    }, 
+    "lifetime": "960", 
+    "name": "lwr_b"
+   }, 
+   {
+    "config": {
+     "cyclassReactor": {
+      "batch_size": "12540", 
+      "burnup": "47.5", 
+      "cycle_time": "22", 
+      "eq_command": "/Users/mouginot/work/app/CLASS/DATA_BASES/FBR_Na/MOX/EQModel/XML/ESFR_MOX_keffBOC.xml,/Users/mouginot/work/app/CLASS/DATA_BASES/FBR_Na/MOX/EQModel/NFO/ESFR_MOX_keffBOC.nfo,1.1", 
+      "eq_model": "EQM_1P", 
+      "fuel_incommods": {"val": "c_sfr_fuel"}, 
+      "fuel_outcommods": {"val": "c_sfr_a_s"}, 
+      "ir_command": "none", 
+      "ir_model": "RK4", 
+      "n_batch_core": "3", 
+      "power": "1080", 
+      "power_cap": "360", 
+      "refuel_time": "0", 
+      "xs_command": "/Users/mouginot/work/app/CLASS/DATA_BASES/FBR_Na/MOX/XSModel/ESFR_48Wg/,Data_Base_Info.nfo,false", 
+      "xs_model": "XSM_MLP"
+     }
+    }, 
+    "lifetime": "960", 
+    "name": "sfr_a"
+   }, 
+   {
+    "config": {
+     "cyclassReactor": {
+      "batch_size": "11467", 
+      "burnup": "42.4", 
+      "cycle_time": "18", 
+      "eq_command": "/Users/mouginot/work/app/CLASS/DATA_BASES/FBR_Na/MOX/EQModel/XML/ESFR_MOX_keffBOC.xml,/Users/mouginot/work/app/CLASS/DATA_BASES/FBR_Na/MOX/EQModel/NFO/ESFR_MOX_keffBOC.nfo,1.1", 
+      "eq_model": "EQM_1P", 
+      "fuel_incommods": {"val": "c_sfr_fuel"}, 
+      "fuel_outcommods": {"val": "c_sfr_b_s"}, 
+      "ir_command": "none", 
+      "ir_model": "RK4", 
+      "n_batch_core": "3", 
+      "power": "1080", 
+      "power_cap": "360", 
+      "refuel_time": "0", 
+      "xs_command": "/Users/mouginot/work/app/CLASS/DATA_BASES/FBR_Na/MOX/XSModel/ESFR_48Wg/,Data_Base_Info.nfo,false", 
+      "xs_model": "XSM_MLP"
+     }
+    }, 
+    "lifetime": "960", 
+    "name": "sfr_b"
+   }, 
+   {
+    "config": {
+     "DeployInst": {
+      "build_times": {"val": ["1", "1", "1", "1", "1", "1", "1", "1", "1", "1"]}, 
+      "lifetimes": {"val": ["218", "266", "314", "362", "410", "458", "506", "554", "602", "650"]}, 
+      "n_build": {"val": ["1", "1", "1", "1", "1", "1", "1", "1", "1", "1"]}, 
+      "prototypes": {
+       "val": [
+        "lwr_a", 
+        "lwr_a", 
+        "lwr_a", 
+        "lwr_a", 
+        "lwr_a", 
+        "lwr_a", 
+        "lwr_a", 
+        "lwr_a", 
+        "lwr_a", 
+        "lwr_a"
+       ]
+      }
+     }
+    }, 
+    "name": "init_reactor_deployer_lwr_a"
+   }, 
+   {
+    "config": {
+     "DeployInst": {
+      "build_times": {"val": ["1", "1"]}, 
+      "n_build": {"val": ["1", "1"]}, 
+      "prototypes": {"val": ["str_lwr_a", "cool_lwr_a"]}
+     }
+    }, 
+    "name": "deployer_supply_lwr_a"
+   }, 
+   {
+    "config": {
+     "DeployInst": {
+      "build_times": {
+       "val": [
+        "13", 
+        "133", 
+        "193", 
+        "229", 
+        "253", 
+        "289", 
+        "325", 
+        "349", 
+        "385", 
+        "421", 
+        "445", 
+        "481", 
+        "517", 
+        "541", 
+        "577", 
+        "613", 
+        "637", 
+        "733"
+       ]
+      }, 
+      "n_build": {
+       "val": [
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1"
+       ]
+      }, 
+      "prototypes": {
+       "val": [
+        "lwr_b", 
+        "lwr_b", 
+        "lwr_b", 
+        "lwr_b", 
+        "lwr_b", 
+        "lwr_b", 
+        "lwr_b", 
+        "lwr_b", 
+        "lwr_b", 
+        "lwr_b", 
+        "lwr_b", 
+        "lwr_b", 
+        "lwr_b", 
+        "lwr_b", 
+        "lwr_b", 
+        "lwr_b", 
+        "lwr_b", 
+        "lwr_b"
+       ]
+      }
+     }
+    }, 
+    "name": "reactor_deployer_lwr_b"
+   }, 
+   {
+    "config": {
+     "DeployInst": {
+      "build_times": {"val": ["1", "1"]}, 
+      "n_build": {"val": ["1", "1"]}, 
+      "prototypes": {"val": ["str_lwr_b", "cool_lwr_b"]}
+     }
+    }, 
+    "name": "deployer_supply_lwr_b"
+   }, 
+   {
+    "config": {
+     "DeployInst": {
+      "build_times": {"val": ["1", "1"]}, 
+      "n_build": {"val": ["1", "1"]}, 
+      "prototypes": {"val": ["str_sfr_a", "cool_sfr_a"]}
+     }
+    }, 
+    "name": "deployer_supply_sfr_a"
+   }, 
+   {
+    "config": {
+     "DeployInst": {
+      "build_times": {
+       "val": [
+        "424", 
+        "589", 
+        "673", 
+        "721", 
+        "769", 
+        "793", 
+        "817", 
+        "841", 
+        "865", 
+        "889", 
+        "913", 
+        "937", 
+        "961", 
+        "973", 
+        "985", 
+        "1009", 
+        "1021", 
+        "1033", 
+        "1045", 
+        "1057", 
+        "1081", 
+        "1093", 
+        "1105", 
+        "1117", 
+        "1129", 
+        "1141", 
+        "1153", 
+        "1165", 
+        "1177", 
+        "1189", 
+        "1201", 
+        "1213", 
+        "1225", 
+        "1237", 
+        "1249", 
+        "1261", 
+        "1273", 
+        "1285", 
+        "1297", 
+        "1309", 
+        "1321", 
+        "1333", 
+        "1345", 
+        "1357", 
+        "1369", 
+        "1381", 
+        "1393", 
+        "1405", 
+        "1417", 
+        "1429", 
+        "1441", 
+        "1453", 
+        "1465", 
+        "1477", 
+        "1489", 
+        "1501", 
+        "1513", 
+        "1525", 
+        "1537", 
+        "1549", 
+        "1561", 
+        "1573", 
+        "1585", 
+        "1597", 
+        "1609", 
+        "1621", 
+        "1633", 
+        "1645", 
+        "1657", 
+        "1669", 
+        "1681", 
+        "1693", 
+        "1705", 
+        "1717", 
+        "1729", 
+        "1741", 
+        "1753", 
+        "1765", 
+        "1777", 
+        "1789", 
+        "1801", 
+        "1813", 
+        "1825", 
+        "1837", 
+        "1849", 
+        "1861", 
+        "1873", 
+        "1885", 
+        "1897", 
+        "1909", 
+        "1921", 
+        "1933", 
+        "1945", 
+        "1957", 
+        "1384", 
+        "1549", 
+        "1633", 
+        "1681", 
+        "1729", 
+        "1753", 
+        "1777", 
+        "1801", 
+        "1825", 
+        "1849", 
+        "1873", 
+        "1897", 
+        "1921", 
+        "1933", 
+        "1945"
+       ]
+      }, 
+      "n_build": {
+       "val": [
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "2", 
+        "1", 
+        "2", 
+        "1", 
+        "2", 
+        "1", 
+        "2", 
+        "2", 
+        "2", 
+        "1", 
+        "2", 
+        "1", 
+        "2", 
+        "2", 
+        "1", 
+        "2", 
+        "2", 
+        "1", 
+        "2", 
+        "2", 
+        "2", 
+        "1", 
+        "2", 
+        "2", 
+        "2", 
+        "1", 
+        "2", 
+        "2", 
+        "2", 
+        "2", 
+        "1", 
+        "2", 
+        "2", 
+        "2", 
+        "2", 
+        "2", 
+        "1", 
+        "2", 
+        "2", 
+        "2", 
+        "1", 
+        "1", 
+        "2", 
+        "1", 
+        "1", 
+        "1", 
+        "2", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "2", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "2", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "2", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1"
+       ]
+      }, 
+      "prototypes": {
+       "val": [
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a", 
+        "sfr_a"
+       ]
+      }
+     }
+    }, 
+    "name": "reactor_deployer_sfr_a"
+   }, 
+   {
+    "config": {
+     "DeployInst": {
+      "build_times": {"val": ["1", "1"]}, 
+      "n_build": {"val": ["1", "1"]}, 
+      "prototypes": {"val": ["str_sfr_b", "cool_sfr_b"]}
+     }
+    }, 
+    "name": "deployer_supply_sfr_b"
+   }, 
+   {
+    "config": {
+     "DeployInst": {
+      "build_times": {
+       "val": [
+        "1969", 
+        "1981", 
+        "1993", 
+        "2005", 
+        "2017", 
+        "2029", 
+        "2041", 
+        "2053", 
+        "2065", 
+        "2077", 
+        "2089", 
+        "2101", 
+        "2113", 
+        "2125", 
+        "2137", 
+        "2149", 
+        "2161", 
+        "2173", 
+        "2185", 
+        "2197", 
+        "2209", 
+        "2221", 
+        "2233", 
+        "2245", 
+        "2257", 
+        "2269", 
+        "2281", 
+        "2293"
+       ]
+      }, 
+      "n_build": {
+       "val": [
+        "2", 
+        "2", 
+        "3", 
+        "2", 
+        "2", 
+        "2", 
+        "2", 
+        "3", 
+        "2", 
+        "2", 
+        "3", 
+        "3", 
+        "3", 
+        "3", 
+        "3", 
+        "3", 
+        "3", 
+        "3", 
+        "3", 
+        "4", 
+        "3", 
+        "3", 
+        "3", 
+        "3", 
+        "4", 
+        "3", 
+        "3", 
+        "4"
+       ]
+      }, 
+      "prototypes": {
+       "val": [
+        "sfr_b", 
+        "sfr_b", 
+        "sfr_b", 
+        "sfr_b", 
+        "sfr_b", 
+        "sfr_b", 
+        "sfr_b", 
+        "sfr_b", 
+        "sfr_b", 
+        "sfr_b", 
+        "sfr_b", 
+        "sfr_b", 
+        "sfr_b", 
+        "sfr_b", 
+        "sfr_b", 
+        "sfr_b", 
+        "sfr_b", 
+        "sfr_b", 
+        "sfr_b", 
+        "sfr_b", 
+        "sfr_b", 
+        "sfr_b", 
+        "sfr_b", 
+        "sfr_b", 
+        "sfr_b", 
+        "sfr_b", 
+        "sfr_b", 
+        "sfr_b"
+       ]
+      }
+     }
+    }, 
+    "name": "reactor_deployer_sfr_b"
+   }, 
+   {
+    "config": {
+     "DeployInst": {
+      "build_times": {
+       "val": [
+        "455", 
+        "731", 
+        "1115", 
+        "1247", 
+        "1371", 
+        "1439", 
+        "1559", 
+        "1691", 
+        "1823", 
+        "1999", 
+        "2011", 
+        "2065", 
+        "2077", 
+        "2131", 
+        "2179", 
+        "2197", 
+        "2227", 
+        "2239", 
+        "2263", 
+        "2293"
+       ]
+      }, 
+      "n_build": {
+       "val": [
+        "1", 
+        "1", 
+        "3", 
+        "2", 
+        "1", 
+        "1", 
+        "2", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "2", 
+        "1", 
+        "1", 
+        "1", 
+        "1", 
+        "2", 
+        "1"
+       ]
+      }, 
+      "prototypes": {
+       "val": [
+        "fab_sfr", 
+        "fab_sfr", 
+        "fab_sfr", 
+        "fab_sfr", 
+        "fab_sfr", 
+        "fab_sfr", 
+        "fab_sfr", 
+        "fab_sfr", 
+        "fab_sfr", 
+        "fab_sfr", 
+        "fab_sfr", 
+        "fab_sfr", 
+        "fab_sfr", 
+        "fab_sfr", 
+        "fab_sfr", 
+        "fab_sfr", 
+        "fab_sfr", 
+        "fab_sfr", 
+        "fab_sfr", 
+        "fab_sfr"
+       ]
+      }
+     }
+    }, 
+    "name": "fabrication_deployer_sfr"
+   }, 
+   {
+    "config": {
+     "DeployInst": {
+      "build_times": {"val": ["1", "1", "1", "1", "1", "1", "1"]}, 
+      "n_build": {"val": ["1", "1", "1", "1", "1", "1", "1"]}, 
+      "prototypes": {
+       "val": [
+        "waste", 
+        "enrichment", 
+        "src_depleted", 
+        "src_u_nat", 
+        "str_du", 
+        "str_ru", 
+        "str_pu"
+       ]
+      }
+     }
+    }, 
+    "name": "deployer"
+   }, 
+   {
+    "config": {
+     "DeployInst": {
+      "build_times": {"val": ["455", "1115", "1562", "2018", "2186", "2270"]}, 
+      "n_build": {"val": ["1", "1", "1", "1", "1", "1"]}, 
+      "prototypes": {
+       "val": [
+        "separation", 
+        "separation", 
+        "separation", 
+        "separation", 
+        "separation", 
+        "separation"
+       ]
+      }
+     }
+    }, 
+    "name": "Sep_deployer"
+   }
+  ], 
+  "recipe": [
+   {
+    "basis": "mass", 
+    "name": "r_du", 
+    "nuclide": [{"comp": "0.0025", "id": "U235"}, {"comp": "0.9975", "id": "U238"}]
+   }, 
+   {"basis": "mass", "name": "r_pu", "nuclide": {"comp": "1", "id": "pu239"}}, 
+   {
+    "basis": "mass", 
+    "name": "r_natl_u", 
+    "nuclide": [{"comp": "0.711", "id": "U235"}, {"comp": "99.289", "id": "U238"}]
+   }, 
+   {
+    "basis": "mass", 
+    "name": "r_uox", 
+    "nuclide": [{"comp": "0.042", "id": "U235"}, {"comp": "0.958", "id": "U238"}]
+   }, 
+   {
+    "basis": "mass", 
+    "name": "r_uox_s_bak", 
+    "nuclide": [
+     {"comp": ".008", "id": "U235"}, 
+     {"comp": " 0.9245", "id": "U238"}, 
+     {"comp": "0.0143", "id": "Pu239"}, 
+     {"comp": "0.0011", "id": "Am241"}, 
+     {"comp": "0.0521", "id": "Cs137"}
+    ]
+   }, 
+   {
+    "basis": "mass", 
+    "name": "r_uox_s", 
+    "nuclide": [
+     {"comp": ".008", "id": "U235"}, 
+     {"comp": "0.9268", "id": "U238"}, 
+     {"comp": "0.012", "id": "Pu239"}, 
+     {"comp": "0.0011", "id": "Am241"}, 
+     {"comp": "0.0521", "id": "Cs137"}
+    ]
+   }, 
+   {
+    "basis": "mass", 
+    "name": "r_sfr_a_fuel", 
+    "nuclide": [{"comp": "0.9236", "id": "U238"}, {"comp": "0.0764", "id": "Pu239"}]
+   }, 
+   {
+    "basis": "mass", 
+    "name": "r_sfr_a_s", 
+    "nuclide": [
+     {"comp": "0.8599", "id": "U238"}, 
+     {"comp": "0.0902", "id": "Pu239"}, 
+     {"comp": "0.0013", "id": "Am241"}, 
+     {"comp": "0.0486", "id": "Cs137"}
+    ]
+   }, 
+   {
+    "basis": "mass", 
+    "name": "r_sfr_b_fuel", 
+    "nuclide": [{"comp": "0.91466", "id": "U238"}, {"comp": "0.08534", "id": "Pu239"}]
+   }, 
+   {
+    "basis": "mass", 
+    "name": "r_sfr_b_s", 
+    "nuclide": [
+     {"comp": "0.86025", "id": "U238"}, 
+     {"comp": "0.09596", "id": "Pu239"}, 
+     {"comp": "0.00107", "id": "Am241"}, 
+     {"comp": "0.04272", "id": "Cs137"}
+    ]
+   }
+  ], 
+  "schematype": "flat"
+ }
+}
