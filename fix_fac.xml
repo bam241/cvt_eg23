@@ -39,7 +39,15 @@
             <Source>
                 <outcommod>c_u_src</outcommod>
                 <outrecipe>r_natl_u</outrecipe>
-                <throughput>1e100</throughput>
+            </Source>
+        </config>
+    </prototype>
+    <prototype>
+        <name>src_u_nat_2</name>
+        <config>
+            <Source>
+                <outcommod>c_u_src_2</outcommod>
+                <outrecipe>r_natl_u</outrecipe>
             </Source>
         </config>
     </prototype>

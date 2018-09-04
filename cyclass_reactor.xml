@@ -72,7 +72,7 @@
         <config>
             <cyclassReactor>
                 <eq_model>EQM_1P</eq_model>
-                <eq_command>/Users/mouginot/work/app/CLASS/DATA_BASES/FBR_Na/MOX/EQModel/XML/ESFR_MOX_keffBOC.xml,/Users/mouginot/work/app/CLASS/DATA_BASES/FBR_Na/MOX/EQModel/NFO/ESFR_MOX_keffBOC.nfo,1.1</eq_command>
+                <eq_command>/Users/mouginot/work/app/CLASS/DATA_BASES/FBR_Na/MOX/EQModel/XML/ESFR_MOX_keffBOC.xml,/Users/mouginot/work/app/CLASS/DATA_BASES/FBR_Na/MOX/EQModel/NFO/ESFR_MOX_keffBOC.nfo,0.75</eq_command>
 
                 <ir_model>RK4</ir_model>
                 <ir_command>none</ir_command>
@@ -100,7 +100,7 @@
         <config>
             <cyclassReactor>
                 <eq_model>EQM_1P</eq_model>
-                <eq_command>/Users/mouginot/work/app/CLASS/DATA_BASES/FBR_Na/MOX/EQModel/XML/ESFR_MOX_keffBOC.xml,/Users/mouginot/work/app/CLASS/DATA_BASES/FBR_Na/MOX/EQModel/NFO/ESFR_MOX_keffBOC.nfo,1.1</eq_command>
+                <eq_command>/Users/mouginot/work/app/CLASS/DATA_BASES/FBR_Na/MOX/EQModel/XML/ESFR_MOX_keffBOC.xml,/Users/mouginot/work/app/CLASS/DATA_BASES/FBR_Na/MOX/EQModel/NFO/ESFR_MOX_keffBOC.nfo,0.75</eq_command>
 
                 <ir_model>RK4</ir_model>
                 <ir_command>none</ir_command>

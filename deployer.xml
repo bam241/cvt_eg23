@@ -10,6 +10,7 @@
                     <val>enrichment</val>
                     <val>src_depleted</val>
                     <val>src_u_nat</val>
+                    <val>src_u_nat_2</val>
                     <val>str_du</val>
                     <val>str_ru</val>
                     <val>str_pu</val>
@@ -23,9 +24,11 @@
                     <val>1</val>
                     <val>1</val>
                     <val>1</val>
+                    <val>1</val>
                 </build_times>
 
                 <n_build>
+                    <val>1</val>
                     <val>1</val>
                     <val>1</val>
                     <val>1</val>
@@ -49,9 +52,11 @@
                     <val>separation</val>
                     <val>separation</val>
                     <val>separation</val>
+                    <val>separation</val>
                 </prototypes>
 
                 <n_build>
+                    <val>1</val>
                     <val>1</val>
                     <val>1</val>
                     <val>1</val>
@@ -63,6 +68,7 @@
                 <build_times>
                     <val>455</val>
                     <val>1115</val>
+                    <val>1350</val>
                     <val>1562</val>
                     <val>2018</val>
                     <val>2186</val>
